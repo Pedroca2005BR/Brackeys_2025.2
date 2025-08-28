@@ -15,13 +15,6 @@ public class Inimigo : MonoBehaviour
     {
         health = maxhealth;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void TakeDamage(float damage)
     {
         health -= damage;

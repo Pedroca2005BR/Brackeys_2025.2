@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 25bd90df602a5ea458e9ccad40b91380
+guid: 3edfdeac3850ca441a335baf995100cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2156362607670919349
-    second: prota_idle-Sheet_0
+      213: 7761408534250604883
+    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_0
   - first:
-      213: 6015562870728331957
-    second: prota_idle-Sheet_1
+      213: 6573680905602107098
+    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_1
   - first:
-      213: -3357028826419809884
-    second: prota_idle-Sheet_2
+      213: 670248766746463865
+    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_2
   - first:
-      213: 2470357571878734150
-    second: prota_idle-Sheet_3
-  - first:
-      213: 7218911676178465319
-    second: prota_idle-Sheet_4
-  - first:
-      213: -1360479982047284992
-    second: prota_idle-Sheet_5
+      213: 8642649425760979342
+    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: prota_idle-Sheet_0
+      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 59
         y: 0
-        width: 19
-        height: 32
+        width: 202
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b00925ed50fced10800000000000000
-      internalID: 2156362607670919349
+      spriteID: 35941b0b0ff06bb60800000000000000
+      internalID: 7761408534250604883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prota_idle-Sheet_1
+      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 379
         y: 0
-        width: 19
-        height: 31
+        width: 202
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b29ac12f829b7350800000000000000
-      internalID: 6015562870728331957
+      spriteID: ad68e2d64f76a3b50800000000000000
+      internalID: 6573680905602107098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prota_idle-Sheet_2
+      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 699
         y: 0
-        width: 19
-        height: 31
+        width: 202
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a1308491107961d0800000000000000
-      internalID: -3357028826419809884
+      spriteID: 97e0115c3b33d4900800000000000000
+      internalID: 670248766746463865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prota_idle-Sheet_3
+      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 1019
         y: 0
-        width: 19
-        height: 32
+        width: 202
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,52 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64947048f19784220800000000000000
-      internalID: 2470357571878734150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prota_idle-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 0
-        width: 19
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 722898b0ce9be2460800000000000000
-      internalID: 7218911676178465319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prota_idle-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 0
-        width: 19
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 001ba0a1aaa9e1de0800000000000000
-      internalID: -1360479982047284992
+      spriteID: e8987bcacdbd0f770800000000000000
+      internalID: 8642649425760979342
       vertices: []
       indices: 
       edges: []
@@ -260,12 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      prota_idle-Sheet_0: 2156362607670919349
-      prota_idle-Sheet_1: 6015562870728331957
-      prota_idle-Sheet_2: -3357028826419809884
-      prota_idle-Sheet_3: 2470357571878734150
-      prota_idle-Sheet_4: 7218911676178465319
-      prota_idle-Sheet_5: -1360479982047284992
+      maquinadechiquete-ezgif.com-gif-to-sprite-converter_0: 7761408534250604883
+      maquinadechiquete-ezgif.com-gif-to-sprite-converter_1: 6573680905602107098
+      maquinadechiquete-ezgif.com-gif-to-sprite-converter_2: 670248766746463865
+      maquinadechiquete-ezgif.com-gif-to-sprite-converter_3: 8642649425760979342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

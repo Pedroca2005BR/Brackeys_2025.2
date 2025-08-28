@@ -36,7 +36,7 @@ public class Arremesaveis : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Inimigo inimigo = collider.GetComponent<Inimigo>();
-        if (collider.CompareTag("Enemy"))
+        if (collider.CompareTag("Inimigo"))
         {
             inimigo.TakeDamage(RangeDamage);// Aplica dano ao inimigo
             Destroy(gameObject);// destroi a flecha junto com o inimigo

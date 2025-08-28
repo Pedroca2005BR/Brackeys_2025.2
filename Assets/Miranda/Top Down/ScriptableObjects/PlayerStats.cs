@@ -12,5 +12,6 @@ public class PlayerStats : ScriptableObject
     [Header("Projeteis")]
     public int[] projectileDamage; // Dano do projétil
     public int[] numberOfProjectiles;
+    public float[] shotCooldown;
 
 }

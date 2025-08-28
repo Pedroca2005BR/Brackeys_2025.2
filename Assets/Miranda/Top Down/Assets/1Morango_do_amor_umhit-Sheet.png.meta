@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 25bd90df602a5ea458e9ccad40b91380
+guid: fee8991a7c497ec4d8a90f606fade548
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2156362607670919349
-    second: prota_idle-Sheet_0
+      213: -3938805422871634880
+    second: 1Morango_do_amor_umhit-Sheet_0
   - first:
-      213: 6015562870728331957
-    second: prota_idle-Sheet_1
+      213: 8900047560112692067
+    second: 1Morango_do_amor_umhit-Sheet_1
   - first:
-      213: -3357028826419809884
-    second: prota_idle-Sheet_2
+      213: 6339167795353270456
+    second: 1Morango_do_amor_umhit-Sheet_2
   - first:
-      213: 2470357571878734150
-    second: prota_idle-Sheet_3
+      213: 4543449102673259118
+    second: 1Morango_do_amor_umhit-Sheet_3
   - first:
-      213: 7218911676178465319
-    second: prota_idle-Sheet_4
-  - first:
-      213: -1360479982047284992
-    second: prota_idle-Sheet_5
+      213: -5841401194000175203
+    second: 1Morango_do_amor_umhit-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: prota_idle-Sheet_0
+      name: 1Morango_do_amor_umhit-Sheet_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 19
-        height: 32
+        x: 1
+        y: 1
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,19 +127,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b00925ed50fced10800000000000000
-      internalID: 2156362607670919349
+      spriteID: 04c9a5a265d8659c0800000000000000
+      internalID: -3938805422871634880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prota_idle-Sheet_1
+      name: 1Morango_do_amor_umhit-Sheet_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 19
+        x: 34
+        y: 1
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b5998f912538b70800000000000000
+      internalID: 8900047560112692067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Morango_do_amor_umhit-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8b0a5068f39f750800000000000000
+      internalID: 6339167795353270456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Morango_do_amor_umhit-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 23
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +193,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b29ac12f829b7350800000000000000
-      internalID: 6015562870728331957
+      spriteID: e6a28ebf2e29d0f30800000000000000
+      internalID: 4543449102673259118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prota_idle-Sheet_2
+      name: 1Morango_do_amor_umhit-Sheet_4
       rect:
         serializedVersion: 2
-        x: 71
-        y: 0
-        width: 19
+        x: 130
+        y: 1
+        width: 24
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,74 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a1308491107961d0800000000000000
-      internalID: -3357028826419809884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prota_idle-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 0
-        width: 19
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64947048f19784220800000000000000
-      internalID: 2470357571878734150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prota_idle-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 0
-        width: 19
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 722898b0ce9be2460800000000000000
-      internalID: 7218911676178465319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prota_idle-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 0
-        width: 19
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 001ba0a1aaa9e1de0800000000000000
-      internalID: -1360479982047284992
+      spriteID: d9fa319209c2feea0800000000000000
+      internalID: -5841401194000175203
       vertices: []
       indices: 
       edges: []
@@ -260,12 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      prota_idle-Sheet_0: 2156362607670919349
-      prota_idle-Sheet_1: 6015562870728331957
-      prota_idle-Sheet_2: -3357028826419809884
-      prota_idle-Sheet_3: 2470357571878734150
-      prota_idle-Sheet_4: 7218911676178465319
-      prota_idle-Sheet_5: -1360479982047284992
+      1Morango_do_amor_umhit-Sheet_0: -3938805422871634880
+      1Morango_do_amor_umhit-Sheet_1: 8900047560112692067
+      1Morango_do_amor_umhit-Sheet_2: 6339167795353270456
+      1Morango_do_amor_umhit-Sheet_3: 4543449102673259118
+      1Morango_do_amor_umhit-Sheet_4: -5841401194000175203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
