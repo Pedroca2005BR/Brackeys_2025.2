@@ -4,10 +4,12 @@ using System.Linq;
 
 public class CardGenerator : MonoBehaviour
 {
+    [SerializeField] private List<CardDisplay> displays;
+
     [SerializeField] private List<Card> normalCards;
     [SerializeField] private List<Card> specialCards;
 
-    [SerializeField] private List<CardDisplay> displays;
+    
 
     public void DisplayCards()
     {
