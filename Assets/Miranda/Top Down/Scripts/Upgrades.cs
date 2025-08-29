@@ -3,34 +3,20 @@ using UnityEngine;
 
 public class Upgrades : MonoBehaviour
 {
-    private void Start()
+
+
+    public TipoUpgrade tipoUpgrade;
+    public enum TipoUpgrade
     {
-        Upgrade("Dash");
-    }
+        // Ainda não sei quais serão os upgrades
+        Dash,
+        Health,
+        Damage,
+        Speed
+    };
     void Upgrade(string algo)
     {
-        switch(algo)
-        {
-            case "Dash":
-                
-                break;
-
-            case "Bow":
-                
-                break;
-
-            case "Health":
-                
-                break;
-
-            case "Damage":
-                
-                break;
-
-            default:
-                Debug.Log("Upgrade desconhecido: " + algo);
-                break;
-        }
+        
 
     }
         

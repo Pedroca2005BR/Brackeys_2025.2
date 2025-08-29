@@ -102,7 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0a91a70d3618b4f802e3c6ad78f16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
   force: 23
+  RangeDamage: 0
 --- !u!50 &-5240562741001516376
 Rigidbody2D:
   serializedVersion: 5

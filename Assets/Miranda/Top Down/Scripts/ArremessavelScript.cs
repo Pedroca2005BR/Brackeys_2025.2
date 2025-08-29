@@ -10,11 +10,13 @@ public class Arremesaveis : MonoBehaviour
     private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
+    public int nivel = 0;
     [SerializeField] private float RangeDamage; // Dano do ataque a distancia
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        atualizar();
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
@@ -35,7 +37,7 @@ public class Arremesaveis : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Inimigo inimigo = collider.GetComponent<Inimigo>();
+        Vida inimigo = collider.GetComponent<Vida>();
         if (collider.CompareTag("Inimigo"))
         {
             inimigo.TakeDamage(RangeDamage);// Aplica dano ao inimigo
@@ -45,8 +47,7 @@ public class Arremesaveis : MonoBehaviour
 
     private void atualizar()
     {
-        RangeDamage = PlayerStats.projectileDamage[0];
-        
+        RangeDamage = PlayerStats.projectileDamage[nivel];  
     }
 
 }

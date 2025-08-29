@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 071103345196286498547ddc36a53bf7, type: 3}
   m_Name: Inimigos
   m_EditorClassIdentifier: 
-  meleeMaxHealth: 0
-  meleeMoveSpeed: 6
-  meleeDano: 0
-  tankMaxHealth: 0
-  tankMoveSpeed: 2
-  tankDano: 0
-  rangedMaxHealth: 0
-  rangedMoveSpeed: 0
-  rangedDano: 0
+  meleeMaxHealth: 5
+  meleeMoveSpeed: 3.5
+  meleeDano: 1
+  tankMaxHealth: 10
+  shieldMaxHealth: 0
+  tankMoveSpeed: 2.8
+  tankDano: 1
+  rangedMaxHealth: 8
+  rangedMoveSpeed: 2.5
+  rangedDano: 4

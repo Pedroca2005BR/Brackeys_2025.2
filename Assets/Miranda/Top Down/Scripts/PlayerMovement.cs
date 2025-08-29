@@ -10,7 +10,7 @@ public class playerMovement : MonoBehaviour
 {
     public PlayerStats PlayerStats; //Referencia ao scriptable object PlayerStats
 
-    [SerializeField] private float _moveSpeed = 5f; //velocidade que o jogador se move
+    [SerializeField] private float _moveSpeed; //velocidade que o jogador se move
 
     private Vector2 _movement;
 
@@ -19,9 +19,9 @@ public class playerMovement : MonoBehaviour
 
 
     [Header("Dash Settings")]
-    [SerializeField] float dashSpeed = 20f; //A velocidade do jogador durante o dash
-    [SerializeField] float dashDuration = .3f; // quanto tempo o jogador esta em dash
-    [SerializeField] float dashCooldown = 3f; // quanto tempo em segundos ate o jogador poder dar outro dash
+    [SerializeField] float dashSpeed; //A velocidade do jogador durante o dash
+    [SerializeField] float dashDuration; // quanto tempo o jogador esta em dash
+    [SerializeField] float dashCooldown; // quanto tempo em segundos ate o jogador poder dar outro dash
     public bool isDashing = false, canDash = true, Correndo = false;
 
 
@@ -31,9 +31,6 @@ public class playerMovement : MonoBehaviour
     private const string _Ultimovertical = "UltimoVertical"; 
 
     public int nivelDash = 0, nivelSpeed; //Nivel do dash, usado para pegar os valores do scriptable object
-    //Essas ultimas 4 linhas são usadas para animação, essas springs entre aspas são a maneira que elas são escritas no ANIMATOR
-    //Elas são usadas para o ANIMATOR para saber em que momento usar as animações de andar ou ficar parado
-
 
     private void Awake()
     {
@@ -93,9 +90,10 @@ public class playerMovement : MonoBehaviour
     private void atualizar()
     {
         //atualiza os valores de velocidade e dash de acordo com o nivel dos upgrades do jogador, os valores são pegos do scriptable object PlayerStats
-        _moveSpeed = PlayerStats.moveSpeed[nivelSpeed];
-        dashCooldown = PlayerStats.dashCooldown[nivelDash];
-        dashSpeed = PlayerStats.dashDistance[nivelDash];
+
+        _moveSpeed = PlayerStats.moveSpeed[nivelSpeed]; // velocidade do jogador
+        dashCooldown = PlayerStats.dashCooldown[nivelDash]; // tempo para usar o dash novamente
+        dashSpeed = PlayerStats.dashDistance[nivelDash]; // distancia que o jogador percorre ao dar dash
     }
 
 }

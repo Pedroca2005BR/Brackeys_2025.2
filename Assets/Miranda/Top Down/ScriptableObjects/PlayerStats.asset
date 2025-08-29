@@ -23,14 +23,19 @@ MonoBehaviour:
   - 24
   - 29
   dashCooldown:
-  - 10
-  - 8
+  - 7
   - 5
   - 3
+  - 2
   maxHealth:
   - 20
   - 30
   - 40
   - 50
-  projectileDamage: 
-  numberOfProjectiles: 
+  projectileDamage: 05000000080000000c0000000f000000
+  numberOfProjectiles: 01000000020000000300000004000000
+  shotCooldown:
+  - 4
+  - 3
+  - 2
+  - 1

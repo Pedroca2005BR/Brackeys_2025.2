@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [CreateAssetMenu(fileName = "Inimigos", menuName = "Scriptable Objects/Inimigos")]
 public class Inimigos : ScriptableObject
@@ -11,6 +12,7 @@ public class Inimigos : ScriptableObject
 
     [Header("Inimigo Tank")]
     public float tankMaxHealth;
+    public float shieldMaxHealth;
     public float tankMoveSpeed;
     public float tankDano;
     
