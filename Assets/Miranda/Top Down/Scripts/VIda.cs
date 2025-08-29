@@ -23,7 +23,6 @@ public class Vida : MonoBehaviour
     }
     void Start()
     {
-        atualizaVida();
         Health();
     }
     public void TakeDamage(float damage)
@@ -40,7 +39,8 @@ public class Vida : MonoBehaviour
         else
         {
             shieldHealth -= damage;
-            hasShield = false;
+
+            if (shieldHealth <= 0) hasShield = false;
 
         }
     }
@@ -54,19 +54,22 @@ public class Vida : MonoBehaviour
                 break;
             case Tipo.Tank:
                 health = Inimigos.tankMaxHealth;
+                shieldHealth = Inimigos.shieldMaxHealth;
+                hasShield = true;
                 break;
             case Tipo.Ranged:
                 health = Inimigos.rangedMaxHealth;
                 break;
             case Tipo.Player:
+                atualizarVida(0);
                 health = PlayerStats.maxHealth[0];
                 break;
 
         }
             
     }
-    public void atualizaVida()
+    public void atualizarVida(int nivel)
     {
-        
+        health = PlayerStats.moveSpeed[nivel];
     }
 }

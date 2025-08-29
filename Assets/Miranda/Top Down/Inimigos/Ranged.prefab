@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5512595372365737309}
   - component: {fileID: 4704413853588997931}
   - component: {fileID: 4806001592012238194}
-  - component: {fileID: 8397429280198557047}
   - component: {fileID: 5007219255695421830}
+  - component: {fileID: 8397429280198557047}
   m_Layer: 0
   m_Name: Ranged
   m_TagString: Inimigo
@@ -136,23 +136,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.984662, y: 8.553438}
   m_EdgeRadius: 0
---- !u!114 &8397429280198557047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9088247205512884801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 136c55df89892bd4d8e39b5ff6f2c3d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Inimigos: {fileID: 11400000, guid: 1a35c54bfc347b24e84a119f5dc8de13, type: 2}
-  PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
-  tipo: 2
-  health: 0
-  shieldHealth: 0
 --- !u!61 &5007219255695421830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -199,3 +182,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.7563276, y: 9.329531}
   m_EdgeRadius: 0
+--- !u!114 &8397429280198557047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088247205512884801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136c55df89892bd4d8e39b5ff6f2c3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inimigos: {fileID: 11400000, guid: 1a35c54bfc347b24e84a119f5dc8de13, type: 2}
+  PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
+  tipo: 2
+  health: 0
+  shieldHealth: 0

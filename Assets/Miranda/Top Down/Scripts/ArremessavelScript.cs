@@ -22,12 +22,12 @@ public class Arremesaveis : MonoBehaviour
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 direction = mousePos - transform.position;
         Vector3 rotation = transform.position - mousePos;
-        rb.linearVelocity = new Vector2(direction.x, direction.y).normalized * force; 
+        rb.linearVelocity = new Vector2(direction.x, direction.y).normalized * force;
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot + 180);
         StartCoroutine(SelfDestruct());
     }
-   
+
 
     IEnumerator SelfDestruct()
     {
@@ -37,13 +37,14 @@ public class Arremesaveis : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Vida inimigo = collider.GetComponent<Vida>();
-        if (collider.CompareTag("Inimigo"))
-        {
-            inimigo.TakeDamage(RangeDamage);// Aplica dano ao inimigo
-            Destroy(gameObject);// destroi a flecha junto com o inimigo
-        }
+            Vida inimigo = collider.GetComponent<Vida>();
+            if (collider.CompareTag("Inimigo"))
+            {
+                Destroy(gameObject);// destroi a flecha junto com o inimigo
+                inimigo.TakeDamage(RangeDamage);// Aplica dano ao inimigo 
+            }
     }
+
 
     private void atualizar()
     {

@@ -30,13 +30,13 @@ public class playerMovement : MonoBehaviour
     private const string _Ultimohorizontal = "UltimoHorizontal";
     private const string _Ultimovertical = "UltimoVertical"; 
 
-    public int nivelDash = 0, nivelSpeed; //Nivel do dash, usado para pegar os valores do scriptable object
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        atualizar();
+        atualizarMoveSpeed(0);
+        atualizarDash(0);
     }
 
     private void Update()
@@ -87,13 +87,18 @@ public class playerMovement : MonoBehaviour
         canDash = true; //Pode dar dash novamente
     }
 
-    private void atualizar()
+    public void atualizarMoveSpeed(int nivel)
     {
         //atualiza os valores de velocidade e dash de acordo com o nivel dos upgrades do jogador, os valores são pegos do scriptable object PlayerStats
 
-        _moveSpeed = PlayerStats.moveSpeed[nivelSpeed]; // velocidade do jogador
-        dashCooldown = PlayerStats.dashCooldown[nivelDash]; // tempo para usar o dash novamente
-        dashSpeed = PlayerStats.dashDistance[nivelDash]; // distancia que o jogador percorre ao dar dash
+        _moveSpeed = PlayerStats.moveSpeed[nivel]; // velocidade do jogador
+        
+    }
+
+    public void atualizarDash(int nivel)
+    {
+        dashSpeed = PlayerStats.dashDistance[nivel]; // velocidade do dash
+        dashCooldown = PlayerStats.dashCooldown[nivel]; // cooldown do dash
     }
 
 }

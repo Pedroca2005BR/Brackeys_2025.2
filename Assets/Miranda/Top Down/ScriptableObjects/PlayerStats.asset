@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679d72f8d9c2e4641a35026a04cb42f2, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
+  maxHealth:
+  - 20
+  - 30
+  - 40
+  - 50
   moveSpeed:
   - 5
   - 8
@@ -23,15 +28,10 @@ MonoBehaviour:
   - 24
   - 29
   dashCooldown:
-  - 7
   - 5
+  - 4
   - 3
   - 2
-  maxHealth:
-  - 20
-  - 30
-  - 40
-  - 50
   projectileDamage: 05000000080000000c0000000f000000
   numberOfProjectiles: 01000000020000000300000004000000
   shotCooldown:
