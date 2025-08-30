@@ -85,6 +85,12 @@ public class WaveSpawner : MonoBehaviour
 
         return new Vector2(spawnX, spawnY);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(player.position, noSpawnRadius);
+    }
 }
 
 [System.Serializable]

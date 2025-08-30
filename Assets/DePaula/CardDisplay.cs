@@ -1,10 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI nameComponent;
     [SerializeField] TextMeshProUGUI descriptionComponent;
+    [SerializeField] Image backgroundImage;
+    Sprite backgroundSprite;
 
     private Animator animator;
 
@@ -16,10 +19,11 @@ public class CardDisplay : MonoBehaviour
 
     public void DisplayCard(Card card)
     {
-        ResetDefaultState();
+        //ResetDefaultState();
         Flip();
         nameComponent.text = card.name;
         descriptionComponent.text = card.description;
+        backgroundSprite = card.backgroundImage;
     }
 
 
@@ -30,7 +34,7 @@ public class CardDisplay : MonoBehaviour
         animator.SetTrigger("FlipStart");
     }
 
-    private void ResetDefaultState()
+    public void ResetDefaultState()
     {
         animator.SetTrigger("Reset");
     }
@@ -61,5 +65,11 @@ public class CardDisplay : MonoBehaviour
     public void FlipEnded()
     {
 
+    }
+
+    // Efeito quando a carta está no meio do giro e mostra sua frente
+    public void ShowFront()
+    {
+        backgroundImage.sprite = backgroundSprite;
     }
 }

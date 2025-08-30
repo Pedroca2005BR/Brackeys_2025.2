@@ -1,10 +1,12 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 
 public class CardGenerator : MonoBehaviour
 {
     [SerializeField] private List<CardDisplay> displays;
+    [SerializeField] private float timeBetweenFlips = 0.5f;
 
     [SerializeField] private List<Card> normalCards;
     [SerializeField] private List<Card> specialCards;
@@ -17,13 +19,22 @@ public class CardGenerator : MonoBehaviour
         {
             for (int i = 0; i < displays.Count; i++)
             {
-                displays[i].DisplayCard(cards[i]);
+                displays[i].ResetDefaultState();
+                // Dá flip na carta apenas quando passar um tempinho
+                IEnumerator coroutine = DisplayIndividualCard(displays[i], cards[i], timeBetweenFlips*i);
+                StartCoroutine(coroutine);
             }
         }
         else
         {
             Debug.LogError("Couldn't generate all cards! Check GenerateCard method in Card class OR number of cards in cardList!");
         }
+    }
+
+    IEnumerator DisplayIndividualCard(CardDisplay display, Card card, float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        display.DisplayCard(card);
     }
 
     private bool TryGenerateCards(out Card[] cards)

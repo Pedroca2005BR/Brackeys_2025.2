@@ -15,4 +15,5 @@ MonoBehaviour:
   name: Tester
   sprite: {fileID: 0}
   description: This card is a test object. Do not use in final product.
+  backgroundImage: {fileID: 732718650879554572, guid: 118857f31b209d4428b7d68dc595a1e2, type: 3}
   isSpecialCard: 0
