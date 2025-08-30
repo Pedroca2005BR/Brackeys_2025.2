@@ -43,6 +43,7 @@ public class Arco : MonoBehaviour
             canFire = false;// não permite o jogador atirar imediatamente
 
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            SoundManager.PlaySound(SoundType.TIRO);
 
         }
 

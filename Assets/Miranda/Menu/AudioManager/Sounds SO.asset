@@ -13,21 +13,38 @@ MonoBehaviour:
   m_Name: Sounds SO
   m_EditorClassIdentifier: 
   sounds:
-  - name: MUSICA1
-    volume: 1
+  - name: TIRO
+    volume: 0.398
+    mixer: {fileID: 24300002, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: ce65c4e97dc2fa7458da88433ebc5fa3, type: 3}
+  - name: UPGRADE
+    volume: 0.419
+    mixer: {fileID: 24300002, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 05fe9e0dd3458b04cb295268a0e9b06e, type: 3}
+  - name: MUSICADERROTA
+    volume: 0.5
     mixer: {fileID: 1655416869016163994, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
     sounds:
-    - {fileID: 8300000, guid: a8742b6d4df52474c81b64deef06f670, type: 3}
-  - name: MUSICA2
-    volume: 1
+    - {fileID: 8300000, guid: f3ea4682d73b0144987389ebd5df3387, type: 3}
+  - name: MUSICA
+    volume: 0.253
     mixer: {fileID: 1655416869016163994, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
     sounds:
-    - {fileID: 8300000, guid: 7be84fd48624fc741b836a4f3957eba1, type: 3}
-  - name: CHUPADA
+    - {fileID: 8300000, guid: 6dbbe756e2226d84191600fdad7b1644, type: 3}
+  - name: BOOM
+    volume: 0.406
+    mixer: {fileID: 24300002, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: c93d1b480d163c34db2459f8ca73c6bf, type: 3}
+  - name: SOFRERDANO
     volume: 1
-    mixer: {fileID: 0}
-    sounds: []
-  - name: SOFRER_DANO
+    mixer: {fileID: 24300002, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 9b14752531bdd6644b461e120a34aaa7, type: 3}
+  - name: COMER
     volume: 1
-    mixer: {fileID: 0}
-    sounds: []
+    mixer: {fileID: 24300002, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 6a61ce68eb1d7c24aa152df44ff0bc6a, type: 3}

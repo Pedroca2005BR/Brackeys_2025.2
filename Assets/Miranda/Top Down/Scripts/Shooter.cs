@@ -6,7 +6,9 @@ using UnityEngine;
 public class ShooterFinal : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
+    public Vector2  local;
     private Transform target;
+    public Explosão explosão;
 
 
     [SerializeField] private float shootRate = 1f;
@@ -25,7 +27,7 @@ public class ShooterFinal : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
-    private void Update()
+    public void Atirar()
     {
         shootTimer -= Time.deltaTime;
 
@@ -33,11 +35,14 @@ public class ShooterFinal : MonoBehaviour
         if (shootTimer <= 0)
         {
             shootTimer = shootRate;
+            local = target.position;
             Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Projectile>();
 
 
             projectile.InitializeProjectile(target, projectileMaxMoveSpeed, projectileMaxHeight);
             projectile.InitializeAnimationCurves(trajectoryAnimationCurve, axisCorrectionAnimationCurve, projectileSpeedAnimationCurve);
+            
+            explosão.LocalExplosão(local);
         }
     }
 }

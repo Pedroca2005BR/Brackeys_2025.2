@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,9 +118,9 @@ TextureImporter:
       name: prota_idle-Sheet_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 0
-        width: 19
+        width: 21
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       name: prota_idle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 38
         y: 0
-        width: 19
+        width: 21
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,9 +162,9 @@ TextureImporter:
       name: prota_idle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 70
         y: 0
-        width: 19
+        width: 21
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,9 +184,9 @@ TextureImporter:
       name: prota_idle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 0
-        width: 19
+        width: 21
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -206,9 +206,9 @@ TextureImporter:
       name: prota_idle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 134
         y: 0
-        width: 19
+        width: 21
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -228,9 +228,9 @@ TextureImporter:
       name: prota_idle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 167
+        x: 166
         y: 0
-        width: 19
+        width: 21
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}

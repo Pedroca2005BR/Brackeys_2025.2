@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 3edfdeac3850ca441a335baf995100cf
+guid: 97043449306d29a44ace8f0395939588
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7761408534250604883
-    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_0
-  - first:
-      213: 6573680905602107098
-    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_1
-  - first:
-      213: 670248766746463865
-    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_2
-  - first:
-      213: 8642649425760979342
-    second: maquinadechiquete-ezgif.com-gif-to-sprite-converter_3
+      213: -3554590803306497985
+    second: Akdoce_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_0
+      name: Akdoce_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 0
-        width: 202
-        height: 320
+        x: 0
+        y: 1
+        width: 62
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35941b0b0ff06bb60800000000000000
-      internalID: 7761408534250604883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_1
-      rect:
-        serializedVersion: 2
-        x: 379
-        y: 0
-        width: 202
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad68e2d64f76a3b50800000000000000
-      internalID: 6573680905602107098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_2
-      rect:
-        serializedVersion: 2
-        x: 699
-        y: 0
-        width: 202
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97e0115c3b33d4900800000000000000
-      internalID: 670248766746463865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: maquinadechiquete-ezgif.com-gif-to-sprite-converter_3
-      rect:
-        serializedVersion: 2
-        x: 1019
-        y: 0
-        width: 202
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8987bcacdbd0f770800000000000000
-      internalID: 8642649425760979342
+      spriteID: f38bb075f7e8baec0800000000000000
+      internalID: -3554590803306497985
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      maquinadechiquete-ezgif.com-gif-to-sprite-converter_0: 7761408534250604883
-      maquinadechiquete-ezgif.com-gif-to-sprite-converter_1: 6573680905602107098
-      maquinadechiquete-ezgif.com-gif-to-sprite-converter_2: 670248766746463865
-      maquinadechiquete-ezgif.com-gif-to-sprite-converter_3: 8642649425760979342
+      Akdoce_0: -3554590803306497985
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,9 +8,6 @@ public class MeleeDamage : MonoBehaviour
     Vida vidaPlayer;
 
     public float damage;
-    float curTime = 0;
-    float nextDamage = 1;
-    private bool damagingPlayer;
 
     public TipoInimigo tipoInimigo;
 
@@ -21,11 +18,6 @@ public class MeleeDamage : MonoBehaviour
         TankDamage,
     };
 
-    public void FixedUpdate()
-    {
-        
-    }
-
     void Start()
     {
         vidaPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Vida>();
@@ -34,16 +26,9 @@ public class MeleeDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (curTime <= 0)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            vidaPlayer.TakeDamage(damage); // dano no player
-
-            curTime = nextDamage; // timer para o próximo dano
-        }
-        else
-        {
-
-            curTime -= Time.deltaTime; // decrementa o timer
+            vidaPlayer.TakeDamage(damage);
         }
     }
 

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 15feb9845f591ab46ad952d022380f43
+guid: 8a0061cd6b434d3469bdf9cf81e90e8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -328301118406494764
-    second: paoquinha-ezgif.com-gif-to-sprite-converter_0
+      213: 1852555415851894735
+    second: maquina_de_chiclete-Sheet-Sheet_0
   - first:
-      213: -4537193463120750227
-    second: paoquinha-ezgif.com-gif-to-sprite-converter_1
+      213: 5629217858483433482
+    second: maquina_de_chiclete-Sheet-Sheet_1
   - first:
-      213: 3506195949510580706
-    second: paoquinha-ezgif.com-gif-to-sprite-converter_2
+      213: -3074709259714389980
+    second: maquina_de_chiclete-Sheet-Sheet_2
   - first:
-      213: -1889476161572266626
-    second: paoquinha-ezgif.com-gif-to-sprite-converter_3
+      213: -7806965073197275734
+    second: maquina_de_chiclete-Sheet-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: paoquinha-ezgif.com-gif-to-sprite-converter_0
+      name: maquina_de_chiclete-Sheet-Sheet_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 9
-        width: 192
-        height: 262
+        x: 4
+        y: 0
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d5740a4fd3a17bf0800000000000000
-      internalID: -328301118406494764
+      spriteID: fc70490e55995b910800000000000000
+      internalID: 1852555415851894735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paoquinha-ezgif.com-gif-to-sprite-converter_1
+      name: maquina_de_chiclete-Sheet-Sheet_1
       rect:
         serializedVersion: 2
-        x: 379
-        y: 29
-        width: 192
-        height: 262
+        x: 36
+        y: 0
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6996799596a801c0800000000000000
-      internalID: -4537193463120750227
+      spriteID: a00b03241dffe1e40800000000000000
+      internalID: 5629217858483433482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paoquinha-ezgif.com-gif-to-sprite-converter_2
+      name: maquina_de_chiclete-Sheet-Sheet_2
       rect:
         serializedVersion: 2
-        x: 699
-        y: 39
-        width: 192
-        height: 262
+        x: 68
+        y: 0
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e9dd73b3a288a030800000000000000
-      internalID: 3506195949510580706
+      spriteID: 4289e1308307455d0800000000000000
+      internalID: -3074709259714389980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paoquinha-ezgif.com-gif-to-sprite-converter_3
+      name: maquina_de_chiclete-Sheet-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1019
-        y: 19
-        width: 192
-        height: 262
+        x: 100
+        y: 0
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7d9ae1217b37c5e0800000000000000
-      internalID: -1889476161572266626
+      spriteID: aa5e13601a618a390800000000000000
+      internalID: -7806965073197275734
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      paoquinha-ezgif.com-gif-to-sprite-converter_0: -328301118406494764
-      paoquinha-ezgif.com-gif-to-sprite-converter_1: -4537193463120750227
-      paoquinha-ezgif.com-gif-to-sprite-converter_2: 3506195949510580706
-      paoquinha-ezgif.com-gif-to-sprite-converter_3: -1889476161572266626
+      maquina_de_chiclete-Sheet-Sheet_0: 1852555415851894735
+      maquina_de_chiclete-Sheet-Sheet_1: 5629217858483433482
+      maquina_de_chiclete-Sheet-Sheet_2: -3074709259714389980
+      maquina_de_chiclete-Sheet-Sheet_3: -7806965073197275734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

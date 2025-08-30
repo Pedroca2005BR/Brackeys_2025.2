@@ -9,6 +9,7 @@ public class Upgrades : MonoBehaviour
     playerMovement playerMovement;
     Vida vida;
     //public Projectile projectile;
+    public GameObject teste;
 
 
 
@@ -38,6 +39,7 @@ public class Upgrades : MonoBehaviour
     {
         playerMovement= GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>();
         vida = GameObject.FindGameObjectWithTag("Player").GetComponent<Vida>();
+        Reset();
         //projectile = GetComponent<Projectile>();
     }
 
@@ -53,7 +55,7 @@ public class Upgrades : MonoBehaviour
                     dashLevel++;
                     playerMovement.atualizarDash(dashLevel);
                 }
-                else Debug.Log("Dash passou do nivel: " + dashLevel);
+                else Debug.Log("Dash passou do nivel 3: " + dashLevel);
                     break;
 
             case "Speed":
@@ -62,7 +64,7 @@ public class Upgrades : MonoBehaviour
                     speedLevel++;
                     playerMovement.atualizarMoveSpeed(speedLevel);
                 }
-                else Debug.Log("Speed passou do nivel: " + speedLevel);
+                else Debug.Log("Speed passou do nivel 3: " + speedLevel);
 
                 break;
 
@@ -71,6 +73,7 @@ public class Upgrades : MonoBehaviour
                 {
                     healthLevel++;
                     vida.atualizarVida(healthLevel);
+                    Debug.Log("Upgrade MaxHealth funcionou : " + healthLevel);
                 }
                 break;
 

@@ -23,19 +23,21 @@ MonoBehaviour:
   - 11
   - 14
   dashDistance:
-  - 14
-  - 19
+  - 12
+  - 16
+  - 20
   - 24
-  - 29
   dashCooldown:
   - 5
   - 4
   - 3
   - 2
   projectileDamage: 05000000080000000c0000000f000000
-  numberOfProjectiles: 01000000020000000300000004000000
   shotCooldown:
   - 4
   - 3
   - 2
   - 1
+  akShotCooldown: 0.5
+  akSpreadAngle: 0
+  akDamage: 1.5

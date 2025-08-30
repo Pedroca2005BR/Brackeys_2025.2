@@ -7,12 +7,13 @@ using UnityEngine.Audio;
 public enum SoundType
 {
     //Os tipo de som no jogo
-    MUSICALEVE,
-    MUSICAPESADA,
-    CHUPADA,
-    SOFRER_DANO,
-
-
+    TIRO,
+    UPGRADE,
+    MUSICADERROTA,
+    MUSICA,
+    BOOM,
+    SOFRERDANO,
+    COMER,
 }
 
 [RequireComponent(typeof(AudioSource))]

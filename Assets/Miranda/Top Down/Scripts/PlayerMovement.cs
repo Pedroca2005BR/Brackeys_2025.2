@@ -35,6 +35,7 @@ public class playerMovement : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+
         atualizarMoveSpeed(0);
         atualizarDash(0);
     }

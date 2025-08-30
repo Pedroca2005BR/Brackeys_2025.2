@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 6af1320190f61f74e8ab1d902778cac9
+guid: f4faa21af6bbdfa42a45f7779455ecac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8405283238236743995
-    second: 0Morango_do_amor-Sheet_0
+      213: 6883010457201112609
+    second: Morango_do_amor-Sheet_0
   - first:
-      213: 7506959134872147677
-    second: 0Morango_do_amor-Sheet_1
+      213: -6411855260114828720
+    second: Morango_do_amor-Sheet_1
   - first:
-      213: 5903378946251575282
-    second: 0Morango_do_amor-Sheet_2
+      213: 168848150036097645
+    second: Morango_do_amor-Sheet_2
   - first:
-      213: -6361094257284372791
-    second: 0Morango_do_amor-Sheet_3
+      213: -2608373832854103754
+    second: Morango_do_amor-Sheet_3
   - first:
-      213: -4700853786021603530
-    second: 0Morango_do_amor-Sheet_4
+      213: -6400109672226638005
+    second: Morango_do_amor-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,13 +112,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 0Morango_do_amor-Sheet_0
+      name: Morango_do_amor-Sheet_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
+        x: 0
+        y: 0
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12675c60b8d558f50800000000000000
+      internalID: 6883010457201112609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morango_do_amor-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
         width: 26
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c69a5c8d6f6a5b80800000000000000
-      internalID: -8405283238236743995
+      spriteID: 052c2a5cc938407a0800000000000000
+      internalID: -6411855260114828720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0Morango_do_amor-Sheet_1
+      name: Morango_do_amor-Sheet_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1
-        width: 24
-        height: 30
+        x: 66
+        y: 0
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd69d614f831e2860800000000000000
-      internalID: 7506959134872147677
+      spriteID: d6a22e37f7ed75200800000000000000
+      internalID: 168848150036097645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0Morango_do_amor-Sheet_2
+      name: Morango_do_amor-Sheet_3
       rect:
         serializedVersion: 2
-        x: 67
-        y: 1
-        width: 23
-        height: 30
+        x: 98
+        y: 0
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ff48d9cfd30de150800000000000000
-      internalID: 5903378946251575282
+      spriteID: 6399e4b91d13dcbd0800000000000000
+      internalID: -2608373832854103754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0Morango_do_amor-Sheet_3
+      name: Morango_do_amor-Sheet_4
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1
-        width: 23
-        height: 31
+        x: 129
+        y: 0
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,30 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c6a9cbb97ad8b7a0800000000000000
-      internalID: -6361094257284372791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0Morango_do_amor-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 1
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 637d127436633ceb0800000000000000
-      internalID: -4700853786021603530
+      spriteID: b47b36f892e3e27a0800000000000000
+      internalID: -6400109672226638005
       vertices: []
       indices: 
       edges: []
@@ -235,11 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      0Morango_do_amor-Sheet_0: -8405283238236743995
-      0Morango_do_amor-Sheet_1: 7506959134872147677
-      0Morango_do_amor-Sheet_2: 5903378946251575282
-      0Morango_do_amor-Sheet_3: -6361094257284372791
-      0Morango_do_amor-Sheet_4: -4700853786021603530
+      Morango_do_amor-Sheet_0: 6883010457201112609
+      Morango_do_amor-Sheet_1: -6411855260114828720
+      Morango_do_amor-Sheet_2: 168848150036097645
+      Morango_do_amor-Sheet_3: -2608373832854103754
+      Morango_do_amor-Sheet_4: -6400109672226638005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

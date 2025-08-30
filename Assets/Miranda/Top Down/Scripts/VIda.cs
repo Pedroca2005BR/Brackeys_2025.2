@@ -6,7 +6,7 @@ public class Vida : MonoBehaviour
     public Inimigos Inimigos;
     public PlayerStats PlayerStats;
     public Tipo tipo;
-    private bool hasShield;
+    private bool hasShield, isplayer = false;
 
     [SerializeField] float health, shieldHealth;
     public enum Tipo 
@@ -25,14 +25,26 @@ public class Vida : MonoBehaviour
     {
         Health();
     }
-    public void TakeDamage(float damage)
+    public
+        void TakeDamage(float damage)
     {
-        if (!hasShield)
+
+        if (isplayer) SoundManager.PlaySound(SoundType.SOFRERDANO);
+
+        if (!hasShield) // Se não tiver escudo entra aqui
         {
             health -= damage;
             if (health <= 0)
             {
-                Destroy(gameObject);
+                if (isplayer)
+                {
+                    //Game Over
+                    //Função pra acabar o jogo
+                    Debug.Log("Game Over");
+
+                }
+                else
+                    Destroy(gameObject);
                 //Mandar XP
             }
         }
@@ -52,15 +64,19 @@ public class Vida : MonoBehaviour
             case Tipo.Melee:
                 health = Inimigos.meleeMaxHealth;
                 break;
+
             case Tipo.Tank:
                 health = Inimigos.tankMaxHealth;
                 shieldHealth = Inimigos.shieldMaxHealth;
                 hasShield = true;
                 break;
+
             case Tipo.Ranged:
                 health = Inimigos.rangedMaxHealth;
                 break;
+
             case Tipo.Player:
+                isplayer = true;
                 atualizarVida(0);
                 health = PlayerStats.maxHealth[0];
                 break;
