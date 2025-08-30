@@ -6,12 +6,12 @@ using UnityEngine;
 public class ShooterFinal : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private Transform target;
+    private Transform target;
 
 
-    [SerializeField] private float shootRate;
-    [SerializeField] private float projectileMaxMoveSpeed;
-    [SerializeField] private float projectileMaxHeight;
+    [SerializeField] private float shootRate = 1f;
+    [SerializeField] private float projectileMaxMoveSpeed = 2f;
+    [SerializeField] private float projectileMaxHeight = 2f;
 
 
     [SerializeField] private AnimationCurve trajectoryAnimationCurve;
@@ -21,7 +21,10 @@ public class ShooterFinal : MonoBehaviour
 
     private float shootTimer;
 
-
+    private void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
     private void Update()
     {
         shootTimer -= Time.deltaTime;
