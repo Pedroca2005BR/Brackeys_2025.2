@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: eab8b8f774c03c94b90c483846ccd023
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9200733138643265059
+    second: opcoes_ui_VAMPIRO_0
+  - first:
+      213: 1547194652088637772
+    second: opcoes_ui_VAMPIRO_1
+  - first:
+      213: -4728843403146054129
+    second: opcoes_ui_VAMPIRO_2
+  - first:
+      213: 1356465674482849369
+    second: opcoes_ui_VAMPIRO_3
+  - first:
+      213: 2283726586622149775
+    second: opcoes_ui_VAMPIRO_4
+  - first:
+      213: -312316036592008363
+    second: opcoes_ui_VAMPIRO_5
+  - first:
+      213: 8171101377368370161
+    second: opcoes_ui_VAMPIRO_6
+  - first:
+      213: 6849960499798047685
+    second: opcoes_ui_VAMPIRO_7
+  - first:
+      213: 8363001043136381013
+    second: opcoes_ui_VAMPIRO_8
+  - first:
+      213: -6014957965456014263
+    second: opcoes_ui_VAMPIRO_9
+  - first:
+      213: -7249063382100640955
+    second: opcoes_ui_VAMPIRO_10
+  - first:
+      213: 133522152075359685
+    second: opcoes_ui_VAMPIRO_11
+  - first:
+      213: -7867129243922872038
+    second: opcoes_ui_VAMPIRO_12
+  - first:
+      213: 1400385761313923130
+    second: opcoes_ui_VAMPIRO_13
+  - first:
+      213: -2162022666594317280
+    second: opcoes_ui_VAMPIRO_14
+  - first:
+      213: -6560467700721273931
+    second: opcoes_ui_VAMPIRO_15
+  - first:
+      213: -4196873313795766977
+    second: opcoes_ui_VAMPIRO_16
+  - first:
+      213: -3634536458592018172
+    second: opcoes_ui_VAMPIRO_17
+  - first:
+      213: -7616947051945174342
+    second: opcoes_ui_VAMPIRO_18
+  - first:
+      213: 1641239395993783152
+    second: opcoes_ui_VAMPIRO_19
+  - first:
+      213: 2185307195159125766
+    second: opcoes_ui_VAMPIRO_20
+  - first:
+      213: -1736958046066400707
+    second: opcoes_ui_VAMPIRO_21
+  - first:
+      213: 2274452904814473211
+    second: opcoes_ui_VAMPIRO_22
+  - first:
+      213: 62662714266072167
+    second: opcoes_ui_VAMPIRO_23
+  - first:
+      213: -8932434884139314074
+    second: opcoes_ui_VAMPIRO_24
+  - first:
+      213: 4755572614239132070
+    second: opcoes_ui_VAMPIRO_25
+  - first:
+      213: -8769721618442882673
+    second: opcoes_ui_VAMPIRO_26
+  - first:
+      213: -7321252631624806708
+    second: opcoes_ui_VAMPIRO_27
+  - first:
+      213: 4867214672153718350
+    second: opcoes_ui_VAMPIRO_28
+  - first:
+      213: -5221548469879888050
+    second: opcoes_ui_VAMPIRO_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 227
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9d00e35fd605080800000000000000
+      internalID: -9200733138643265059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 207
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c499024b65db87510800000000000000
+      internalID: 1547194652088637772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 199
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06b705baf5cf5eb0800000000000000
+      internalID: -4728843403146054129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 199
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9569f85185223d210800000000000000
+      internalID: 1356465674482849369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 193
+        width: 57
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f848ab71b3d61bf10800000000000000
+      internalID: 2283726586622149775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 180
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553864d283e6aabf0800000000000000
+      internalID: -312316036592008363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 162
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb2fbd0965956170800000000000000
+      internalID: 8171101377368370161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 162
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb7beb28c2ff0f50800000000000000
+      internalID: 6849960499798047685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 160
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5508d50c3295f0470800000000000000
+      internalID: 8363001043136381013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 157
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944861a5993968ca0800000000000000
+      internalID: -6014957965456014263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_10
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 175
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b799bd247266b90800000000000000
+      internalID: -7249063382100640955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 164
+        width: 52
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5f81c90bd5ad100800000000000000
+      internalID: 133522152075359685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_12
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 146
+        width: 55
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19c3ed62a752d290800000000000000
+      internalID: -7867129243922872038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_13
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 127
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30a1ab2e6b2f6310800000000000000
+      internalID: 1400385761313923130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 133
+        width: 52
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c8d41f6d3fef1e0800000000000000
+      internalID: -2162022666594317280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 115
+        width: 35
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3b512926984f4a0800000000000000
+      internalID: -6560467700721273931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 114
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3503e305f5b1c5c0800000000000000
+      internalID: -4196873313795766977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_17
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 113
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401aa66f8588f8dc0800000000000000
+      internalID: -3634536458592018172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_18
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 114
+        width: 52
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba59d7330b2b4690800000000000000
+      internalID: -7616947051945174342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 101
+        width: 52
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b0695f88ad6c610800000000000000
+      internalID: 1641239395993783152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 82
+        width: 44
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f9094d055c35e10800000000000000
+      internalID: 2185307195159125766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 82
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32a4722cd515e7e0800000000000000
+      internalID: -1736958046066400707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_22
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 82
+        width: 52
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff62d9cdda709f10800000000000000
+      internalID: 2274452904814473211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_23
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 69
+        width: 52
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764bd78186f9ed000800000000000000
+      internalID: 62662714266072167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 40
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66491978ccd990480800000000000000
+      internalID: -8932434884139314074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_25
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 50
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a99c47b8103ff140800000000000000
+      internalID: 4755572614239132070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_26
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 51
+        width: 52
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81f5a9e6a0bb4680800000000000000
+      internalID: -8769721618442882673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_27
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 35
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce0c1d658fa56a90800000000000000
+      internalID: -7321252631624806708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_28
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 36
+        width: 52
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4eaa4be4f1db8340800000000000000
+      internalID: 4867214672153718350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opcoes_ui_VAMPIRO_29
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 18
+        width: 55
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e472353e4555987b0800000000000000
+      internalID: -5221548469879888050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      opcoes_ui_VAMPIRO_0: -9200733138643265059
+      opcoes_ui_VAMPIRO_1: 1547194652088637772
+      opcoes_ui_VAMPIRO_10: -7249063382100640955
+      opcoes_ui_VAMPIRO_11: 133522152075359685
+      opcoes_ui_VAMPIRO_12: -7867129243922872038
+      opcoes_ui_VAMPIRO_13: 1400385761313923130
+      opcoes_ui_VAMPIRO_14: -2162022666594317280
+      opcoes_ui_VAMPIRO_15: -6560467700721273931
+      opcoes_ui_VAMPIRO_16: -4196873313795766977
+      opcoes_ui_VAMPIRO_17: -3634536458592018172
+      opcoes_ui_VAMPIRO_18: -7616947051945174342
+      opcoes_ui_VAMPIRO_19: 1641239395993783152
+      opcoes_ui_VAMPIRO_2: -4728843403146054129
+      opcoes_ui_VAMPIRO_20: 2185307195159125766
+      opcoes_ui_VAMPIRO_21: -1736958046066400707
+      opcoes_ui_VAMPIRO_22: 2274452904814473211
+      opcoes_ui_VAMPIRO_23: 62662714266072167
+      opcoes_ui_VAMPIRO_24: -8932434884139314074
+      opcoes_ui_VAMPIRO_25: 4755572614239132070
+      opcoes_ui_VAMPIRO_26: -8769721618442882673
+      opcoes_ui_VAMPIRO_27: -7321252631624806708
+      opcoes_ui_VAMPIRO_28: 4867214672153718350
+      opcoes_ui_VAMPIRO_29: -5221548469879888050
+      opcoes_ui_VAMPIRO_3: 1356465674482849369
+      opcoes_ui_VAMPIRO_4: 2283726586622149775
+      opcoes_ui_VAMPIRO_5: -312316036592008363
+      opcoes_ui_VAMPIRO_6: 8171101377368370161
+      opcoes_ui_VAMPIRO_7: 6849960499798047685
+      opcoes_ui_VAMPIRO_8: 8363001043136381013
+      opcoes_ui_VAMPIRO_9: -6014957965456014263
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
