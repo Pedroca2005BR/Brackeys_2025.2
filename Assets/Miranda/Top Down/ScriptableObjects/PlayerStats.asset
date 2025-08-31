@@ -38,6 +38,6 @@ MonoBehaviour:
   - 3
   - 2
   - 1
-  akShotCooldown: 0.5
-  akSpreadAngle: 0
-  akDamage: 1.5
+  akShotCooldown: 0.4
+  akSpreadAngle: 15
+  akDamage: 1

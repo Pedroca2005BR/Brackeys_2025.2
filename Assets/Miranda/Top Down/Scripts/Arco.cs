@@ -2,57 +2,82 @@ using UnityEngine;
 
 public class Arco : MonoBehaviour
 {
+    public PlayerStats PlayerStats;
     private Camera mainCam;
     private Vector3 mousePos;
     public GameObject bullet;
     public Transform bulletTransform;
+    public Transform gun;
     public bool canFire, isAK; //Se o jogador pode atirar ou não
     private float timer;
     public float timeBetweenFiring = 5f;
+    public float spreadAngle;
+    float projectileSpeed = 10f;
 
     void Start()
     {
+
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        if (isAK)
+        {
+            timeBetweenFiring = PlayerStats.akShotCooldown;
+            spreadAngle = PlayerStats.akSpreadAngle;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+ 
+        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        var direction = new Vector2(mousePos.x - gun.position.x, mousePos.y - gun.position.y);
+        bulletTransform.right = direction;
+        podeAtirar();
 
-        Vector3 rotation = mousePos - transform.position;
+    }
 
-        float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+    private void podeAtirar()
+    {
 
-        transform.rotation = Quaternion.Euler(0, 0, rotZ);
-
-        if (!canFire){
+        if (!canFire)
+        {
 
             timer += Time.deltaTime;
 
-            if(timer > timeBetweenFiring)
+            if (timer > timeBetweenFiring)
             {
                 canFire = true;
-                timer = 0;  
+                timer = 0;
             }
 
         }
 
-        if(Input.GetMouseButton(0) && canFire)
-        {
+            if (Input.GetMouseButton(0) && canFire)
+            {
             if (isAK)
             {
+                
+                canFire = false;// não permite o jogador atirar imediatamente
+                Debug.Log("AK");
 
+                gun.localRotation = Quaternion.Euler(new Vector3(bulletTransform.localRotation.x, bulletTransform.localRotation.y, Random.Range(-spreadAngle, spreadAngle)));
+                GameObject bullet1 = Instantiate(bullet, gun.position, gun.rotation);
+                bullet1.GetComponent<Rigidbody2D>().linearVelocity = gun.right * projectileSpeed;
+                SoundManager.PlaySound(SoundType.TIRO);
+                
             }
             else
             {
+                Debug.Log("Pistola");
+
                 canFire = false;// não permite o jogador atirar imediatamente
-
-                Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+                GameObject bullet1 = Instantiate(bullet, gun.position, gun.rotation);
+                bullet1.GetComponent<Rigidbody2D>().linearVelocity = gun.right * projectileSpeed;
                 SoundManager.PlaySound(SoundType.TIRO);
-
-            }           
+            }
+            
         }
-
+        
     }
 }
