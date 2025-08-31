@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 852983f220e563646a0a9dc152c81050
+guid: 8ac9ad9fc1f896b4fb399418a895fd55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7807153837451426616
-    second: Carta_vermelha_0
+      213: 6868371012532790344
+    second: Carta_vermelha_verso_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Carta_vermelha_0
+      name: Carta_vermelha_verso_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c441ebe2fa67a390800000000000000
-      internalID: -7807153837451426616
+      spriteID: 8446b93bb0b515f50800000000000000
+      internalID: 6868371012532790344
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Carta_vermelha_0: -7807153837451426616
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

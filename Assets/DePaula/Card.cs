@@ -9,6 +9,7 @@ public class Card : ScriptableObject
     public Sprite sprite;
     [TextArea] public string description;
     public Sprite backgroundImage;
+    public Sprite backsideImage;
 
     public TipoCarta tipo;
 

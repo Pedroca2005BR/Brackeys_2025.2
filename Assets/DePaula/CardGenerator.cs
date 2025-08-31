@@ -19,9 +19,9 @@ public class CardGenerator : MonoBehaviour
         {
             for (int i = 0; i < displays.Count; i++)
             {
-                displays[i].ResetDefaultState();
+                displays[i].PrepareCard(cards[i]);
                 // Dá flip na carta apenas quando passar um tempinho
-                IEnumerator coroutine = DisplayIndividualCard(displays[i], cards[i], timeBetweenFlips*i);
+                IEnumerator coroutine = FlipIndividualCard(displays[i], timeBetweenFlips*i);
                 StartCoroutine(coroutine);
             }
         }
@@ -31,10 +31,10 @@ public class CardGenerator : MonoBehaviour
         }
     }
 
-    IEnumerator DisplayIndividualCard(CardDisplay display, Card card, float waitTime)
+    IEnumerator FlipIndividualCard(CardDisplay display, float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        display.DisplayCard(card);
+        display.Flip();
     }
 
     private bool TryGenerateCards(out Card[] cards)

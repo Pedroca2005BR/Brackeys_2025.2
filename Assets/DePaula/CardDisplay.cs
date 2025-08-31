@@ -19,15 +19,15 @@ public class CardDisplay : MonoBehaviour
     }
 
 
-    public void DisplayCard(Card card)
-    {
-        //ResetDefaultState();
-        storedCard = card;
-        Flip();
-        nameComponent.text = card.name;
-        descriptionComponent.text = card.description;
-        backgroundSprite = card.backgroundImage;
-    }
+    //public void DisplayCard(Card card)
+    //{
+    //    //ResetDefaultState();
+    //    storedCard = card;
+    //    //Flip();
+    //    nameComponent.text = card.name;
+    //    descriptionComponent.text = card.description;
+    //    backgroundSprite = card.backgroundImage;
+    //}
 
 
 
@@ -37,7 +37,18 @@ public class CardDisplay : MonoBehaviour
         animator.SetTrigger("FlipStart");
     }
 
-    public void ResetDefaultState()
+    public void PrepareCard(Card card)
+    {
+        ResetDefaultState();
+        storedCard = card;
+        nameComponent.text = card.name;
+        descriptionComponent.text = card.description;
+        backgroundSprite = card.backgroundImage;
+        // Show back
+        backgroundImage.sprite = card.backsideImage;
+    }
+
+    private void ResetDefaultState()
     {
         animator.SetTrigger("Reset");
     }

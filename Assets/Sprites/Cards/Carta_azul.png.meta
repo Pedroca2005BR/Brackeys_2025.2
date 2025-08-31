@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carta_azul_0: 732718650879554572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
