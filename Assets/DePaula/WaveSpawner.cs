@@ -115,12 +115,31 @@ public class WaveSpawner : MonoBehaviour
     private Vector2 GetRandomSpawnPosition()
     {
 
-        float angle = UnityEngine.Random.Range(0f, Mathf.PI * 2f);
+        float angle;
 
-        float spawnX = player.position.x + Mathf.Cos(angle) * noSpawnRadius;
-        float spawnY = player.position.y + Mathf.Sin(angle) * noSpawnRadius;
+        float spawnX;
+        float spawnY;
+        Collider2D col;
 
-        return new Vector2(spawnX, spawnY);
+        Vector2 pos;
+
+        //if (Physics2D.BoxCast(pos, Vector2.one, 0f, Vector2.zero))
+        //{
+        //    pos *= -1;
+        //}
+
+        do
+        {
+            angle = UnityEngine.Random.Range(0f, Mathf.PI * 2f);
+            spawnX = player.position.x + Mathf.Cos(angle) * noSpawnRadius;
+            spawnY = player.position.y + Mathf.Sin(angle) * noSpawnRadius;
+            pos = new Vector2(spawnX, spawnY);
+
+            col = Physics2D.OverlapCircle(pos, 0.5f);
+
+        } while (col != null && col.CompareTag("Border"));
+
+        return pos;
     }
 
     public void CheckWinCondition()

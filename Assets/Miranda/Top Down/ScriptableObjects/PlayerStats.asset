@@ -32,11 +32,11 @@ MonoBehaviour:
   - 4
   - 3
   - 2
-  projectileDamage: 05000000080000000c0000000f000000
+  projectileDamage: 070000000a0000000e00000012000000
   shotCooldown:
-  - 2
-  - 1.6
-  - 1.2
+  - 1.7
+  - 1.4
+  - 1.1
   - 0.8
   akShotCooldownMultiplier: 0.2
   akSpreadAngle: 15

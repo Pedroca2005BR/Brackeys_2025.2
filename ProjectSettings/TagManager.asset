@@ -8,6 +8,7 @@ TagManager:
   - Tank
   - Enemy
   - explosion
+  - Border
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - 
   - tilemap
-  - 
+  - Border
   - 
   - 
   - 

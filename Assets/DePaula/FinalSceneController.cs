@@ -7,6 +7,9 @@ public class FinalSceneController : MonoBehaviour
     public bool isWinnerScene;
     public TextMeshProUGUI textcomponent;
 
+    float timer = 0f;
+    bool canGoback = false;
+
     private void Start()
     {
         if (isWinnerScene)
@@ -34,6 +37,17 @@ public class FinalSceneController : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        if (canGoback)
         SceneManager.LoadScene(0);
+    }
+
+    private void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer > 2f)
+        {
+            canGoback = true;
+        }
     }
 }

@@ -2577,9 +2577,9 @@ GameObject:
   - component: {fileID: 370205543}
   - component: {fileID: 370205542}
   - component: {fileID: 370205541}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Parede 2
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2673,7 +2673,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.71889645, b: 0.2688679, a: 1}
   m_FlipX: 0
@@ -2694,8 +2694,8 @@ Transform:
   m_GameObject: {fileID: 370205540}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7056436, w: 0.70856696}
-  m_LocalPosition: {x: -3.6978798, y: -53.787033, z: -0.7}
-  m_LocalScale: {x: 3.3387167, y: 69.70021, z: 1}
+  m_LocalPosition: {x: -3.664, y: -61.9909, z: 0}
+  m_LocalScale: {x: 19.746506, y: 69.70021, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1263611789}
@@ -57555,9 +57555,9 @@ GameObject:
   - component: {fileID: 1250064346}
   - component: {fileID: 1250064345}
   - component: {fileID: 1250064344}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Parede
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57651,7 +57651,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.71889645, b: 0.2688679, a: 1}
   m_FlipX: 0
@@ -57672,8 +57672,8 @@ Transform:
   m_GameObject: {fileID: 1250064343}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.35118, y: -18.491432, z: -0.7}
-  m_LocalScale: {x: 3.3387165, y: 69.70021, z: 1}
+  m_LocalPosition: {x: -46.8554, y: -18.3038, z: 0}
+  m_LocalScale: {x: 20.34714, y: 106.09491, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1263611789}
@@ -61312,9 +61312,9 @@ GameObject:
   - component: {fileID: 1668776125}
   - component: {fileID: 1668776124}
   - component: {fileID: 1668776123}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Parede 1
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61408,7 +61408,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.71889645, b: 0.2688679, a: 1}
   m_FlipX: 0
@@ -61429,8 +61429,8 @@ Transform:
   m_GameObject: {fileID: 1668776122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.60212, y: -19.487032, z: -0.7}
-  m_LocalScale: {x: 3.3387165, y: 69.70021, z: 1}
+  m_LocalPosition: {x: 39.2653, y: -22.3951, z: 0}
+  m_LocalScale: {x: 18.665094, y: 101.79333, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1263611789}
@@ -63914,9 +63914,9 @@ GameObject:
   - component: {fileID: 1928704889}
   - component: {fileID: 1928704888}
   - component: {fileID: 1928704887}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Parede 3
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64010,7 +64010,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.71889645, b: 0.2688679, a: 1}
   m_FlipX: 0
@@ -64031,8 +64031,8 @@ Transform:
   m_GameObject: {fileID: 1928704886}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7056436, w: 0.70856696}
-  m_LocalPosition: {x: -3.6978798, y: 15.712967, z: -0.7}
-  m_LocalScale: {x: 3.3387167, y: 69.70021, z: 1}
+  m_LocalPosition: {x: -3.7281, y: 23.0274, z: 0}
+  m_LocalScale: {x: 17.967638, y: 69.70021, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1263611789}
