@@ -102,4 +102,22 @@ public class playerMovement : MonoBehaviour
         dashCooldown = PlayerStats.dashCooldown[nivel]; // cooldown do dash
     }
 
+
+
+    // Time shit
+    private void OnGameStateChanged(GameState state)
+    {
+        enabled = state == GameState.Gameplay;        
+
+    }
+
+    private void OnEnable()
+    {
+        GameStateManager.instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDisable()
+    {
+        GameStateManager.instance.OnGameStateChanged -= OnGameStateChanged;
+    }
 }

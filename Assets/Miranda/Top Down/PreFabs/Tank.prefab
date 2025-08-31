@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inimigos: {fileID: 11400000, guid: 1a35c54bfc347b24e84a119f5dc8de13, type: 2}
   PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
-  tipo: 1
+  tipo: 3
   health: 0
   shieldHealth: 0
 --- !u!114 &2386905767280945756

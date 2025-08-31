@@ -11,10 +11,10 @@ public class Vida : MonoBehaviour
     [SerializeField] float health, shieldHealth;
     public enum Tipo 
     { 
-        Melee,
-        Tank,
-        Ranged,
-        Player
+        Melee = 1,
+        Tank = 3,
+        Ranged = 4,
+        Player = 0
     };
     
     private void Awake()
@@ -44,8 +44,13 @@ public class Vida : MonoBehaviour
 
                 }
                 else
+                {
+                    //Mandar XP
+                    LevelUpManager.instance.IncreaseExp((int)tipo);
                     Destroy(gameObject);
-                //Mandar XP
+                    
+                }
+
             }
         }
         else
@@ -86,6 +91,6 @@ public class Vida : MonoBehaviour
     }
     public void atualizarVida(int nivel)
     {
-        health = PlayerStats.moveSpeed[nivel];
+        health = PlayerStats.maxHealth[nivel];
     }
 }
