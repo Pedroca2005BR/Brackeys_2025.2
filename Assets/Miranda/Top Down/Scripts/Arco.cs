@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Arco : MonoBehaviour
@@ -15,8 +16,14 @@ public class Arco : MonoBehaviour
     float projectileSpeed = 10f;
     int cooldownLevel = 0, damageLevel = 0;
 
+    private float distanceToCamera;
+    private CinemachineBrain cameraBrain;
+
     void Start()
     {
+        //cameraBrain = Camera.main.GetComponent<CinemachineBrain>();
+        distanceToCamera = Vector3.Distance(transform.position, brain.ActiveVirtualCamera.VirtualCameraGameObject.transform.position);
+        distanceToCamera = Vector3.Distance(transform.position, Camera.main.transform.position);
 
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         if (isAK)
@@ -33,8 +40,8 @@ public class Arco : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
- 
-        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distanceToCamera));
+        //mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         var direction = new Vector2(mousePos.x - gun.position.x, mousePos.y - gun.position.y);
         bulletTransform.right = direction;
         podeAtirar();

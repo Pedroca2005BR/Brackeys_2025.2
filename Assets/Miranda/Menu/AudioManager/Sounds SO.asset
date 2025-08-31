@@ -48,3 +48,8 @@ MonoBehaviour:
     mixer: {fileID: 24300002, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
     sounds:
     - {fileID: 8300000, guid: 6a61ce68eb1d7c24aa152df44ff0bc6a, type: 3}
+  - name: FLIPCARTA
+    volume: 1
+    mixer: {fileID: 24300002, guid: cb5540232b79aa242b59a74a9111e179, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 244130634e8405c4896e7944babd628c, type: 3}

@@ -14,6 +14,7 @@ public enum SoundType
     BOOM,
     SOFRERDANO,
     COMER,
+    FLIPCARTA
 }
 
 [RequireComponent(typeof(AudioSource))]
