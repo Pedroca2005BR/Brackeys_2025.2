@@ -1,20 +1,21 @@
 using UnityEngine;
 
-public class Explosão : MonoBehaviour
+public class Explosao : MonoBehaviour
 {
     public Inimigos inimigos; // Referência ao script Inimigos para acessar o dano
+    private GameObject area; // Referência ao script AreaExplosao para destruir a área após a explosão
 
     public float splashRange; // Dano da explosão na área
     public float rangeDamage; // Dano da explosão na área
 
-    Transform Transform;
+    public Vector2 local; // Posição do alvo da explosão
     public GameObject areaExplosao; // Prefab da área de explosão
 
-    Vida vidaPlayer;
+    Vida vida;
 
     private void Start()
     {
-        vidaPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Vida>();
+        vida = GameObject.FindGameObjectWithTag("Player").GetComponent<Vida>();
         rangeDamage = inimigos.rangedDano; // Definir o dano da explosão com base no inimigo
         splashRange = inimigos.splashRange; // Definir o alcance da explosão com base no inimigo
     }
@@ -22,28 +23,26 @@ public class Explosão : MonoBehaviour
     public void LocalExplosão(Vector2 target)
     {
         Instantiate(areaExplosao, target, Quaternion.identity); // Instanciar a explosão na posição do alvo
+        local = target; // Atualizar a posição do alvo
+        area = GameObject.FindGameObjectWithTag("explosion");
     }
         
 
     public void Explodir()
     {
-        Debug.Log("2");
         SoundManager.PlaySound(SoundType.BOOM); // Som de explosão
-        Debug.Log("3");
         Dano(); // Dar dano na area se o player estiver na area
-        Debug.Log("4");
-        Destroy(areaExplosao); // Destruir objeto explosão
-        Debug.Log("5");
+        Destroy(area); // Destruir o objeto de explosão
     }
 
     public void Dano()
     {
-        var hitColliders = Physics2D.OverlapCircleAll(transform.position, splashRange);
+        var hitColliders = Physics2D.OverlapCircleAll(local, splashRange);
         foreach (var hitCollider in hitColliders)
         {
             if (hitCollider.CompareTag("Player"))
             {
-                vidaPlayer.TakeDamage(rangeDamage);
+                vida.TakeDamage(rangeDamage);
             }
         }
 

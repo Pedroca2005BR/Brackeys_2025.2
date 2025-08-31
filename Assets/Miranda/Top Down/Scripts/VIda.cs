@@ -29,7 +29,7 @@ public class Vida : MonoBehaviour
         void TakeDamage(float damage)
     {
 
-        if (isplayer) SoundManager.PlaySound(SoundType.SOFRERDANO);
+        if(isplayer) SoundManager.PlaySound(SoundType.SOFRERDANO);
 
         if (!hasShield) // Se não tiver escudo entra aqui
         {

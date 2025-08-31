@@ -21,7 +21,7 @@ MonoBehaviour:
   tankDano: 4
   rangedMaxHealth: 8
   rangedMoveSpeed: 1
-  rangedAttackRate: 3
+  rangedFireRate: 4
   rangedAttackRange: 8
   splashRange: 1
   rangedDano: 7

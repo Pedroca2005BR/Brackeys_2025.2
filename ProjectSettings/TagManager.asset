@@ -7,6 +7,7 @@ TagManager:
   - Inimigo
   - Tank
   - Enemy
+  - explosion
   layers:
   - Default
   - TransparentFX

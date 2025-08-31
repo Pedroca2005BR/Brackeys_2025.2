@@ -6,7 +6,7 @@ public class Arco : MonoBehaviour
     private Vector3 mousePos;
     public GameObject bullet;
     public Transform bulletTransform;
-    public bool canFire; //Se o jogador pode atirar ou não
+    public bool canFire, isAK; //Se o jogador pode atirar ou não
     private float timer;
     public float timeBetweenFiring = 5f;
 
@@ -40,11 +40,18 @@ public class Arco : MonoBehaviour
 
         if(Input.GetMouseButton(0) && canFire)
         {
-            canFire = false;// não permite o jogador atirar imediatamente
+            if (isAK)
+            {
 
-            Instantiate(bullet, bulletTransform.position, Quaternion.identity);
-            SoundManager.PlaySound(SoundType.TIRO);
+            }
+            else
+            {
+                canFire = false;// não permite o jogador atirar imediatamente
 
+                Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+                SoundManager.PlaySound(SoundType.TIRO);
+
+            }           
         }
 
     }
