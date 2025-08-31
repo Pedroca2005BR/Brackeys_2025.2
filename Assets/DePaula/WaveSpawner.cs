@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -19,7 +20,10 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] private float spawnCooldown = 0.5f;
     [SerializeField][Range(0.01f, 1f)] private float cooldownMultipler = 1f;
 
-    int waveNumber = 0;
+    [Header("Victory Condition")]
+    [SerializeField] private int finalWave = 10;
+    int wavesEnded = 0;
+    int currentWave = 0;
 
 
 
@@ -42,9 +46,15 @@ public class WaveSpawner : MonoBehaviour
     #endregion
 
 
+    private void Start()
+    {
+        currentWave = 0;
+        //waveBudget =
+    }
+
     public void SpawnNextWave()
     {
-        waveNumber++;
+        currentWave++;
         
         SpawnWave(waveBudget);
 
@@ -56,7 +66,7 @@ public class WaveSpawner : MonoBehaviour
     private bool TrySpawnEnemy(int i)
     {
         // Se o inimigo nao pode ser spawnado ainda, retorna falso
-        if (enemies[i].blockUntilWave > waveNumber)
+        if (enemies[i].blockUntilWave > currentWave)
         {
             return false;
         }
@@ -74,7 +84,7 @@ public class WaveSpawner : MonoBehaviour
 
     public void SpawnWave(int budget)
     {
-        IEnumerator coroutine = SpawnWaveCoroutine(budget, waveNumber);
+        IEnumerator coroutine = SpawnWaveCoroutine(budget, currentWave);
         StartCoroutine(coroutine);
     }
 
@@ -94,6 +104,8 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(time);
 
         } while (budget > 0);
+
+        wavesEnded++;
     }
 
     private Vector2 GetRandomSpawnPosition()
@@ -105,6 +117,24 @@ public class WaveSpawner : MonoBehaviour
         float spawnY = player.position.y + Mathf.Sin(angle) * noSpawnRadius;
 
         return new Vector2(spawnX, spawnY);
+    }
+
+    public void CheckWinCondition()
+    {
+        if (finalWave == wavesEnded)
+        {
+            IEnumerator rotina = HasEnemiesOnScreen();
+            StartCoroutine(rotina);
+        }
+    }
+
+    IEnumerator HasEnemiesOnScreen()
+    {
+        yield return new WaitForSeconds(1f);
+        if (transform.childCount == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);   // Scene final : vitoria
+        }
     }
 
     private void OnDrawGizmos()
@@ -120,4 +150,5 @@ public class EnemySpawnInfo
     public GameObject enemy;
     public int cost = 1;
     public int blockUntilWave = 0;
+    public float chanceToSpawn = 1f;
 }

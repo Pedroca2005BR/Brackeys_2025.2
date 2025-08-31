@@ -22,7 +22,7 @@ public class Arco : MonoBehaviour
     void Start()
     {
         //cameraBrain = Camera.main.GetComponent<CinemachineBrain>();
-        distanceToCamera = Vector3.Distance(transform.position, brain.ActiveVirtualCamera.VirtualCameraGameObject.transform.position);
+        //distanceToCamera = Vector3.Distance(transform.position, brain.ActiveVirtualCamera.VirtualCameraGameObject.transform.position);
         distanceToCamera = Vector3.Distance(transform.position, Camera.main.transform.position);
 
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();

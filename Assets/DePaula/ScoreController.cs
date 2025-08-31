@@ -7,7 +7,7 @@ public static class ScoreController
         PlayerPrefs.SetInt("Score", score);
         if (PlayerPrefs.GetInt("Highscore", 0) < score)
         {
-
+            PlayerPrefs.SetInt("Highscore", score);
         }
     }
 }

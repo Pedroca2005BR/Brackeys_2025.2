@@ -32,6 +32,9 @@ public class LevelUpManager : MonoBehaviour
         currentProgress -= expToLevelUp;
         expToLevelUp *= (int)(expRequirementMultiplier);
 
+        SoundManager.PlaySound(SoundType.UPGRADE);
+
+
         CallCardSystem();
     }
 
@@ -45,7 +48,7 @@ public class LevelUpManager : MonoBehaviour
 
     public void InflictCardEffect(Card card)
     {
-        Debug.Log("Processando Efeito...");
+        //Debug.Log("Processando Efeito...");
         // Restaurando ao normal
         Time.timeScale = 1f;
         //PauseController.instance.ToggleGameState();
@@ -55,7 +58,7 @@ public class LevelUpManager : MonoBehaviour
         switch(card.tipo)
         {
             case Card.TipoCarta.Normal:
-                Debug.Log("Upgrade reconhecido!");
+                //Debug.Log("Upgrade reconhecido!");
                 Upgrades.instance.Upgrade(card.tipoUpgrade); break;
             case Card.TipoCarta.Cookie:
                 WaveSpawner.instance.SpawnWave(card.waveBudget); break;

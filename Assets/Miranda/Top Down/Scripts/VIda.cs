@@ -1,5 +1,6 @@
 using Pedroca2005BR.Utilities;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Vida : MonoBehaviour
 {
@@ -42,13 +43,16 @@ public class Vida : MonoBehaviour
                     //Game Over
                     //Função pra acabar o jogo
                     Debug.Log("Game Over");
-                    ScoreController.score = Stopwatch.instance.GetTime();
+                    ScoreController.SetScore(Stopwatch.instance.GetTime());
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   // Next scene: derrota
 
                 }
                 else
                 {
                     //Mandar XP
                     LevelUpManager.instance.IncreaseExp((int)tipo);
+
+                    WaveSpawner.instance.CheckWinCondition();
                     Destroy(gameObject);
                     
                 }

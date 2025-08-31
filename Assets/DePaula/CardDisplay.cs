@@ -36,6 +36,7 @@ public class CardDisplay : MonoBehaviour
     public void Flip()
     {
         animator.SetTrigger("FlipStart");
+        SoundManager.PlaySound(SoundType.FLIPCARTA);
     }
 
     public void PrepareCard(Card card)
