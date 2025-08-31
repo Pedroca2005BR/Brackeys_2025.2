@@ -5,7 +5,6 @@ public class Arco : MonoBehaviour
 {
     public PlayerStats PlayerStats;
     private Camera mainCam;
-    private Vector3 mousePos;
     public GameObject bullet;
     public Transform bulletTransform;
     public Transform gun;
@@ -20,8 +19,7 @@ public class Arco : MonoBehaviour
 
     void Start()
     {
-        //cameraBrain = Camera.main.GetComponent<CinemachineBrain>();
-        distanceToCamera = Vector3.Distance(transform.position, brain.ActiveVirtualCamera.VirtualCameraGameObject.transform.position);
+        
         distanceToCamera = Vector3.Distance(transform.position, Camera.main.transform.position);
 
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -36,7 +34,7 @@ public class Arco : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distanceToCamera));
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distanceToCamera));
         //mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         var direction = new Vector2(mousePos.x - gun.position.x, mousePos.y - gun.position.y);
         bulletTransform.right = direction;
