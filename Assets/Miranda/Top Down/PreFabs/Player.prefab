@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1982418711996434381
 Transform:
   m_ObjectHideFlags: 0
@@ -100,10 +100,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44199593694606b41aea7a1e2d6abe38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
   bullet: {fileID: 2623983545006485436, guid: 43d3f3601cc50f84d8462f9c8f23a29f, type: 3}
-  bulletTransform: {fileID: 1982418711996434381}
+  bulletTransform: {fileID: 61971581938587909}
+  gun: {fileID: 1982418711996434381}
   canFire: 1
-  timeBetweenFiring: 0.4
+  isAK: 1
+  timeBetweenFiring: 0.3
+  spreadAngle: 0
 --- !u!1 &1566285106065297518
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1478679022190531547
 Transform:
   m_ObjectHideFlags: 0
@@ -204,10 +208,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44199593694606b41aea7a1e2d6abe38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
   bullet: {fileID: 2623983545006485436, guid: 43d3f3601cc50f84d8462f9c8f23a29f, type: 3}
-  bulletTransform: {fileID: 1478679022190531547}
+  bulletTransform: {fileID: 61971581938587909}
+  gun: {fileID: 1478679022190531547}
   canFire: 1
+  isAK: 0
   timeBetweenFiring: 2
+  spreadAngle: 0
 --- !u!1 &2867560339086138490
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +243,7 @@ Transform:
   m_GameObject: {fileID: 2867560339086138490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.08, y: -8.66, z: -0.98933357}
+  m_LocalPosition: {x: 0, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -518,7 +526,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 61971581938587909}
-  - component: {fileID: 7660592112008834829}
   m_Layer: 0
   m_Name: Arma
   m_TagString: Untagged
@@ -535,7 +542,7 @@ Transform:
   m_GameObject: {fileID: 8289666492765440903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.079, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -543,16 +550,3 @@ Transform:
   - {fileID: 1982418711996434381}
   m_Father: {fileID: 6758804149597310304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7660592112008834829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8289666492765440903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83486a13d962fb4cac26ad4c45eb8cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletTransform: {fileID: 0}
