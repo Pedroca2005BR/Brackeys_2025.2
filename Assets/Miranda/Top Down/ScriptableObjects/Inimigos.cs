@@ -20,7 +20,7 @@ public class Inimigos : ScriptableObject
     [Header("Inimigo Ranged")]
     public float rangedMaxHealth; // vida
     public float rangedMoveSpeed; // velocidade de movimento
-    public float rangedAttackRate; // velocidade que o inimigo joga um projetil em segundos
+    public float rangedFireRate; // velocidade que o inimigo joga um projetil em segundos
     public float rangedAttackRange; // distância que o inimigo pode atirar
     public float splashRange; // raio da explosão   
     public float rangedDano; // dano no collision da explosão

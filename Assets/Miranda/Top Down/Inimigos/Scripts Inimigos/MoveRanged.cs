@@ -1,3 +1,4 @@
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -5,8 +6,12 @@ public class MoveRanged : MonoBehaviour
 {
     [SerializeField]public float shootingRange; // distancia que o inimigo vai começar a atacar
     [SerializeField]public float moveSpeed; // velocidade de movimento do inimigo
-    Rigidbody2D rb;
+    
+    private Rigidbody2D rb;
+
     public Vector2 moveDirection;
+
+    float inputX;
 
     public Inimigos Inimigos;
     public ShooterFinal ShooterFinal;
@@ -22,15 +27,25 @@ public class MoveRanged : MonoBehaviour
 
     private void Update()
     {
+        Vector3 direction = (target.position - transform.position).normalized;
+        moveDirection = direction;
+
+        if (moveDirection.x < 0)gameObject.transform.localScale = new Vector3(-3,3,1);
+        else gameObject.transform.localScale = new Vector3(3, 3, 1);
+
         float distance = Vector2.Distance(target.position, transform.position);
+        
         if (distance <= shootingRange)
         {
             ShooterFinal.Atirar();
         }
         else
         {
+            
+                
+            
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         }
     }
 
-    }
+}

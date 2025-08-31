@@ -1,4 +1,6 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Windows;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class MoveMelee : MonoBehaviour
@@ -10,8 +12,6 @@ public class MoveMelee : MonoBehaviour
     Vector2 moveDirection;
     private Animator _animator;
     [SerializeField] public bool isTank = false;
-    private const string _horizontal = "Horizontal";
-    private const string _vertical = "Vertical";
 
     private void Awake()
     {
@@ -21,9 +21,7 @@ public class MoveMelee : MonoBehaviour
 
     void Start()
     {
-
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
     }
 
 
@@ -35,8 +33,10 @@ public class MoveMelee : MonoBehaviour
             Vector3 direction = (target.position - transform.position).normalized;
             moveDirection = direction;
         }
-        _animator.SetFloat(_horizontal, moveDirection.x); //animação do jogador ao andar para direita e para esquerda
-        _animator.SetFloat(_vertical, moveDirection.y); //animação do jogador ao andar para cima e para baixo
+
+        
+        if (moveDirection.x < 0) gameObject.transform.localScale = new Vector3(-3, 3, 1);
+        else gameObject.transform.localScale = new Vector3(3, 3, 1);
     }
 
     private void FixedUpdate()

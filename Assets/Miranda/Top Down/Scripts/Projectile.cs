@@ -7,7 +7,8 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] private ProjectileVisual projectileVisual;
 
-    public Explosão explosão;
+
+    Explosao explosao;
     private Transform target;
     private float moveSpeed;
     private float maxMoveSpeed;
@@ -30,6 +31,7 @@ public class Projectile : MonoBehaviour
     private void Start()
     {
         trajectoryStartPoint = transform.position;
+        explosao = FindFirstObjectByType<Explosao>();
     }
 
     private void Update()
@@ -39,7 +41,7 @@ public class Projectile : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.position) < distanceToTargetToDestroyProjectile)
         {
-            explosão.Explodir();
+            explosao.Explodir();
             Destroy(gameObject);
             
             // Desativar explosão area aqui e dar dano no player se dentro da area

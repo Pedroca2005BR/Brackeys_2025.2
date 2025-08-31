@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
 
 
 public class ShooterFinal : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
-    public Vector2  local;
-    private Transform target;
-    public Explosão explosão;
+    
+    public Vector3  local;
+    private Transform player, target;
+    public Explosao explosão;
+    public Inimigos inimigos;
 
 
-    [SerializeField] private float shootRate = 1f;
+
+    [SerializeField] private float shootRate;
     [SerializeField] private float projectileMaxMoveSpeed = 2f;
     [SerializeField] private float projectileMaxHeight = 2f;
 
@@ -25,7 +29,9 @@ public class ShooterFinal : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        
+        shootRate = inimigos.rangedFireRate;
     }
     public void Atirar()
     {
@@ -35,14 +41,18 @@ public class ShooterFinal : MonoBehaviour
         if (shootTimer <= 0)
         {
             shootTimer = shootRate;
-            local = target.position;
+            local = player.position;
+            explosão.LocalExplosão(local);
+            target = GameObject.FindGameObjectWithTag("explosion").GetComponent<Transform>();
+
             Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Projectile>();
+            
 
 
             projectile.InitializeProjectile(target, projectileMaxMoveSpeed, projectileMaxHeight);
             projectile.InitializeAnimationCurves(trajectoryAnimationCurve, axisCorrectionAnimationCurve, projectileSpeedAnimationCurve);
             
-            explosão.LocalExplosão(local);
+            
         }
     }
 }
