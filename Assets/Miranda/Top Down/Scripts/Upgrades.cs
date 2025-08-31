@@ -87,6 +87,8 @@ public class Upgrades : MonoBehaviour
                 playerMovement.atualizarMoveSpeed(currentLevels[index]); break;
             case TipoUpgrade.Health:
                 vida.atualizarVida(currentLevels[index]); break;
+            case TipoUpgrade.Damage:
+                break;
         }
 
         //switch (tipo)

@@ -11,7 +11,7 @@ public class CardDisplay : MonoBehaviour
 
     Card storedCard;
 
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     private void Start()
     {
@@ -56,7 +56,7 @@ public class CardDisplay : MonoBehaviour
     private void CardChosen()
     {
         // TO DO: Chama o LevelUp manager pra aceitar o upgrade, desligar o pai, e retomar o tempo
-       
+       LevelUpManager.instance.InflictCardEffect(storedCard);
     }
 
 
@@ -74,7 +74,7 @@ public class CardDisplay : MonoBehaviour
     public void Click()
     {
         Debug.Log("Chosen!");
-
+        CardChosen();
     }
 
     // Efeito quando o mouse sai de cima da carta

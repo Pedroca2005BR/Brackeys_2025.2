@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inimigos: {fileID: 11400000, guid: 1a35c54bfc347b24e84a119f5dc8de13, type: 2}
   PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
-  tipo: 2
+  tipo: 4
   health: 0
   shieldHealth: 0
 --- !u!114 &8043132395572809755
@@ -287,7 +287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inimigos: {fileID: 11400000, guid: 1a35c54bfc347b24e84a119f5dc8de13, type: 2}
-  area: {fileID: 0}
   splashRange: 1
   rangeDamage: 7
   local: {x: 0, y: 0}

@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4966383298818745136
 Transform:
   m_ObjectHideFlags: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inimigos: {fileID: 11400000, guid: 1a35c54bfc347b24e84a119f5dc8de13, type: 2}
   PlayerStats: {fileID: 11400000, guid: 3a7550422c323474da2f5de4f45b3994, type: 2}
-  tipo: 1
+  tipo: 3
   health: 0
   shieldHealth: 0
 --- !u!114 &2386905767280945756
