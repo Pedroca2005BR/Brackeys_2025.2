@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8552725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1431502969404434161, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
+  m_PrefabInstance: {fileID: 812337152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &33792845 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6758804149597310304, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
@@ -821,13 +826,12 @@ MonoBehaviour:
   - {fileID: 1249345721}
   timeBetweenFlips: 0.5
   normalCards:
-  - {fileID: 11400000, guid: ad744c0a21d6f434f9e547ffaa793252, type: 2}
-  - {fileID: 11400000, guid: 5ed65cfc784a3b046be35f2652fba065, type: 2}
-  - {fileID: 11400000, guid: 5ed65cfc784a3b046be35f2652fba065, type: 2}
-  - {fileID: 11400000, guid: 5ed65cfc784a3b046be35f2652fba065, type: 2}
-  specialCards:
-  - {fileID: 11400000, guid: aee480ba5184eef41a1ea023f38fc919, type: 2}
-  - {fileID: 11400000, guid: aee480ba5184eef41a1ea023f38fc919, type: 2}
+  - {fileID: 11400000, guid: aafb00802f50fa24aa7c94c28b7efb04, type: 2}
+  - {fileID: 11400000, guid: 9a5faf8775544414684bef31cd967a79, type: 2}
+  - {fileID: 11400000, guid: 830759b0e57e92d49812ae1f892d4494, type: 2}
+  - {fileID: 11400000, guid: 65c998cbb4e43b245a48bbe676b9fe3f, type: 2}
+  - {fileID: 11400000, guid: 47eb5c8c6af473345b367d9f2b4f17c5, type: 2}
+  - {fileID: 11400000, guid: e78b360da11369b4b9ea145ce1d62fb3, type: 2}
 --- !u!4 &422937670
 Transform:
   m_ObjectHideFlags: 0
@@ -1164,13 +1168,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 894719614908331025, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
+      propertyPath: tipo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5996708518609562191, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6758804149597310304, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758804149597310304, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1215,7 +1219,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8289666492765440903, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190579134}
   m_SourcePrefab: {fileID: 100100000, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
 --- !u!1 &812451664
 GameObject:
@@ -1253,6 +1260,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 300, y: 0}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!1 &833966840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1566285106065297518, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
+  m_PrefabInstance: {fileID: 812337152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &903425811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1903,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1190579132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8289666492765440903, guid: 5452d8bf382979140b9e9c4ce87879f7, type: 3}
+  m_PrefabInstance: {fileID: 812337152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1190579134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190579132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b418df0cb8ea78347a8031a32cac563b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistola: {fileID: 833966840}
+  ak: {fileID: 8552725}
 --- !u!1 &1219612787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,13 +2303,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd8241524cf8bc4588e5c031d435497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expToLevelUp: 2
-  expRequirementMultiplier: 1
+  expToLevelUp: 10
+  expRequirementMultiplier: 1.2
   maxLevel: 5
   currentLevel: 0
   currentProgress: 0
   cardDisplays: {fileID: 218558629}
   cardGenerator: {fileID: 422937669}
+  weaponSwitcher: {fileID: 1190579134}
 --- !u!4 &1396765881
 Transform:
   m_ObjectHideFlags: 0
@@ -2794,6 +2826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9b77f308c09a0458ae726bf114ea66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponSwitcher: {fileID: 1190579134}
   maxLevels: 0300000003000000030000000300000003000000
 --- !u!4 &2032956778
 Transform:

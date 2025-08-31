@@ -9,7 +9,7 @@ public class CardGenerator : MonoBehaviour
     [SerializeField] private float timeBetweenFlips = 0.5f;
 
     [SerializeField] private List<Card> normalCards;
-    [SerializeField] private List<Card> specialCards;
+    //[SerializeField] private List<Card> specialCards;
 
     
 
@@ -40,13 +40,13 @@ public class CardGenerator : MonoBehaviour
     private bool TryGenerateCards(out Card[] cards)
     {
         ShuffleCards(normalCards);
-        ShuffleCards(specialCards);
+        //ShuffleCards(specialCards);
 
         // nesse bloco, o i serve para procurar cards que podem ser gerados. O k serve para colocar os cards no array final.
         // Se o i chegar no fim da lista, a geracao de cartas deu errado. Se o k chegar em 2, o loop termina.
         cards = new Card[3];
         int i = 0, k = 0;
-        while (k < 2)
+        while (k < 3)
         {
             if (normalCards[i].CanBeGenerated())
             {
@@ -62,21 +62,21 @@ public class CardGenerator : MonoBehaviour
         }
 
         // Aqui é a mesma coisa, mas para special cards.
-        i = 0;
-        while (k < 3)
-        {
-            if (specialCards[i].CanBeGenerated())
-            {
-                cards[k] = specialCards[i];
-                k++;
-            }
+        //i = 0;
+        //while (k < 3)
+        //{
+        //    if (specialCards[i].CanBeGenerated())
+        //    {
+        //        cards[k] = specialCards[i];
+        //        k++;
+        //    }
 
-            i++;
-            if (i == specialCards.Count)
-            {
-                return false;
-            }
-        }
+        //    i++;
+        //    if (i == specialCards.Count)
+        //    {
+        //        return false;
+        //    }
+        //}
 
         return true;
     }

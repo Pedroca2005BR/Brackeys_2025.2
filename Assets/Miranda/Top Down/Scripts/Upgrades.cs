@@ -8,6 +8,7 @@ public class Upgrades : MonoBehaviour
 {
     playerMovement playerMovement;
     Vida vida;
+    [SerializeField] WeaponSwitcher weaponSwitcher;
     //public Projectile projectile;
     //public GameObject teste;
 
@@ -88,7 +89,10 @@ public class Upgrades : MonoBehaviour
             case TipoUpgrade.Health:
                 vida.atualizarVida(currentLevels[index]); break;
             case TipoUpgrade.Damage:
-                break;
+                Arco a = weaponSwitcher.GetCurrentWeapon();
+                a.AtualizarDano(currentLevels[index]); break;
+            case TipoUpgrade.ProjectileCooldown:
+                weaponSwitcher.GetCurrentWeapon().AtualizarCooldown(currentLevels[index]); break;
         }
 
         //switch (tipo)
@@ -155,6 +159,10 @@ public class Upgrades : MonoBehaviour
 
         //Vida.cs
         playerMovement.atualizarMoveSpeed(0);
+
+        weaponSwitcher.GetCurrentWeapon().AtualizarCooldown(0);
+        weaponSwitcher.GetCurrentWeapon().AtualizarDano(0);
+
         //healthLevel = 0;
 
         //Projectile.cs
@@ -165,7 +173,7 @@ public class Upgrades : MonoBehaviour
     {
         int index = (int)tipo;
 
-        if (currentLevels[index] == currentLevels[index])
+        if (currentLevels[index] == maxLevels[index])
         {
             return true;
         }

@@ -17,8 +17,8 @@ public class PlayerStats : ScriptableObject
     public float[] shotCooldown;
 
     [Header("AK")]
-    public float akShotCooldown;
+    public float akShotCooldownMultiplier;
     public float akSpreadAngle;
-    public float akDamage;
+    public float akDamageMultiplier;
 
 }

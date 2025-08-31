@@ -18,8 +18,10 @@ public class Card : ScriptableObject
     //public int currentLevel = 0;
     public Upgrades.TipoUpgrade tipoUpgrade;
 
-    //[Header("Special Card")]
+    [Header("Special Card")]
     //public bool isSpecialCard;
+    public bool isUsedUp = false;
+    public float chance;
 
     [Header("Cookie Card")]
     public int waveBudget;
@@ -37,6 +39,18 @@ public class Card : ScriptableObject
                 return true;
 
             // Falta cases pra special
+            case TipoCarta.Special:
+                if (isUsedUp) return false;
+                else
+                {
+                    if (UnityEngine.Random.value > chance)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+
+
             default:
                 return true;
         }

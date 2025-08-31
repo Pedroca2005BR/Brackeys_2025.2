@@ -42,8 +42,8 @@ public class ShooterFinal : MonoBehaviour
         {
             shootTimer = shootRate;
             local = player.position;
-            explosão.LocalExplosão(local);
-            target = GameObject.FindGameObjectWithTag("explosion").GetComponent<Transform>();
+            target = explosão.LocalExplosão(local);
+            //target = GameObject.FindGameObjectWithTag("explosion").GetComponent<Transform>();
 
             Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Projectile>();
             

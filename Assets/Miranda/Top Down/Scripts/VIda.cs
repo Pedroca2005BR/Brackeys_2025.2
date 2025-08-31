@@ -1,3 +1,4 @@
+using Pedroca2005BR.Utilities;
 using UnityEngine;
 
 public class Vida : MonoBehaviour
@@ -41,6 +42,7 @@ public class Vida : MonoBehaviour
                     //Game Over
                     //Função pra acabar o jogo
                     Debug.Log("Game Over");
+                    ScoreController.score = Stopwatch.instance.GetTime();
 
                 }
                 else

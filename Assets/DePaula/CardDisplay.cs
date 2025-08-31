@@ -58,6 +58,7 @@ public class CardDisplay : MonoBehaviour
     {
         // TO DO: Chama o LevelUp manager pra aceitar o upgrade, desligar o pai, e retomar o tempo
        LevelUpManager.instance.InflictCardEffect(storedCard);
+        Debug.Log("Inflicting solicited!");
     }
 
 
@@ -66,7 +67,7 @@ public class CardDisplay : MonoBehaviour
     // Efeito quando o mouse estiver emcima da carta
     public void Hovering()
     {
-        Debug.Log("Hovering!");
+        //Debug.Log("Hovering!");
         animator.SetBool("IsMouseOn", true);
     }
 
@@ -74,14 +75,14 @@ public class CardDisplay : MonoBehaviour
     // Quando o player clicar na carta
     public void Click()
     {
-        Debug.Log("Chosen!");
+        //Debug.Log("Chosen!");
         CardChosen();
     }
 
     // Efeito quando o mouse sai de cima da carta
     public void ExitMouse()
     {
-        Debug.Log("Mouse not in card!");
+        //Debug.Log("Mouse not in card!");
         animator.SetBool("IsMouseOn", false);
     }
 

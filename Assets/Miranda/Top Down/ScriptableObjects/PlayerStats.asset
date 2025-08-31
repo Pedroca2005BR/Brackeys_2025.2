@@ -34,10 +34,10 @@ MonoBehaviour:
   - 2
   projectileDamage: 05000000080000000c0000000f000000
   shotCooldown:
-  - 4
-  - 3
   - 2
-  - 1
-  akShotCooldown: 0.4
+  - 1.6
+  - 1.2
+  - 0.8
+  akShotCooldownMultiplier: 0.2
   akSpreadAngle: 15
-  akDamage: 1
+  akDamageMultiplier: 0.33

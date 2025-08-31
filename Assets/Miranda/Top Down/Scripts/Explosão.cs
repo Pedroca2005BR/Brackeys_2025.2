@@ -20,10 +20,11 @@ public class Explosao : MonoBehaviour
         splashRange = inimigos.splashRange; // Definir o alcance da explosão com base no inimigo
     }
 
-    public void LocalExplosão(Vector2 target)
+    public Transform LocalExplosão(Vector2 target)
     {
-        Instantiate(areaExplosao, target, Quaternion.identity); // Instanciar a explosão na posição do alvo
+        GameObject area = Instantiate(areaExplosao, target, Quaternion.identity); // Instanciar a explosão na posição do alvo
         local = target; // Atualizar a posição do alvo
+        return area.GetComponent<Transform>();
         area = GameObject.FindGameObjectWithTag("explosion");
     }
         

@@ -11,13 +11,23 @@ public class Arremesaveis : MonoBehaviour
     private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
-    public int nivel = 0;
+    //public int nivel = 0;
     [SerializeField] private float RangeDamage; // Dano do ataque a distancia
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+
+    public void Setup(bool isAk, int nivel)
     {
-        atualizar();
+        if (isAk)
+        {
+            RangeDamage = PlayerStats.projectileDamage[nivel] * PlayerStats.akDamageMultiplier;
+        }
+        else
+        {
+            RangeDamage = PlayerStats.projectileDamage[nivel];
+        }
+        //AtualizarDamage(0);
+
         StartCoroutine(SelfDestruct());
     }
     
@@ -38,10 +48,5 @@ public class Arremesaveis : MonoBehaviour
             }
     }
 
-
-    private void atualizar()
-    {
-        RangeDamage = PlayerStats.projectileDamage[nivel];  
-    }
 
 }

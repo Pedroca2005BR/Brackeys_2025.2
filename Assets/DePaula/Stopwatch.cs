@@ -31,6 +31,25 @@ namespace Pedroca2005BR.Utilities
         private int _seconds;
 
 
+        #region Singleton
+
+        public static Stopwatch instance;
+
+        private void Awake()
+        {
+            if (instance != null && instance != this)
+            {
+                Destroy(this);
+            }
+            else
+            {
+                instance = this;
+            }
+        }
+
+        #endregion
+
+
         private void Start()
         {
             _currentTime = _startTime;
@@ -181,6 +200,11 @@ namespace Pedroca2005BR.Utilities
         public void SetCountDown()
         {
             _isCountdown = true;
+        }
+
+        public int GetTime()
+        {
+            return (int)_currentTime;
         }
     }
 
