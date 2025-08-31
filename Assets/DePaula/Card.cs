@@ -10,16 +10,41 @@ public class Card : ScriptableObject
     [TextArea] public string description;
     public Sprite backgroundImage;
 
-    //[Header("Upgrade Variables")]
+    public TipoCarta tipo;
+
+    [Header("Upgrade Card")]
     //public int maxLevel;
     //public int currentLevel = 0;
+    public Upgrades.TipoUpgrade tipoUpgrade;
 
-    [Header("Special Card")]
-    public bool isSpecialCard;
+    //[Header("Special Card")]
+    //public bool isSpecialCard;
+
+    [Header("Cookie Card")]
+    public int waveBudget;
 
 
     public bool CanBeGenerated()
     {
-        return true;
+        switch(tipo)
+        {
+            case TipoCarta.Normal:
+                if (Upgrades.instance.IsAtMaxLevel(tipoUpgrade))
+                {
+                    return false;
+                }
+                return true;
+
+            // Falta cases pra special
+            default:
+                return true;
+        }
+    }
+
+    public enum TipoCarta
+    {
+        Normal = 0,
+        Special = 1,
+        Cookie = 2
     }
 }

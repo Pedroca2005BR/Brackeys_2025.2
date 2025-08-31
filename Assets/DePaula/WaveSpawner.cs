@@ -21,6 +21,27 @@ public class WaveSpawner : MonoBehaviour
 
     int waveNumber = 0;
 
+
+
+    #region Singleton
+
+    public static WaveSpawner instance;
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
+    #endregion
+
+
     public void SpawnNextWave()
     {
         waveNumber++;

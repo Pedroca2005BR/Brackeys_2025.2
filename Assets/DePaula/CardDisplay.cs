@@ -9,6 +9,8 @@ public class CardDisplay : MonoBehaviour
     [SerializeField] Image backgroundImage;
     Sprite backgroundSprite;
 
+    Card storedCard;
+
     private Animator animator;
 
     private void Start()
@@ -20,6 +22,7 @@ public class CardDisplay : MonoBehaviour
     public void DisplayCard(Card card)
     {
         //ResetDefaultState();
+        storedCard = card;
         Flip();
         nameComponent.text = card.name;
         descriptionComponent.text = card.description;
@@ -39,6 +42,14 @@ public class CardDisplay : MonoBehaviour
         animator.SetTrigger("Reset");
     }
 
+    private void CardChosen()
+    {
+        // TO DO: Chama o LevelUp manager pra aceitar o upgrade, desligar o pai, e retomar o tempo
+       
+    }
+
+
+
 
     // Efeito quando o mouse estiver emcima da carta
     public void Hovering()
@@ -52,6 +63,7 @@ public class CardDisplay : MonoBehaviour
     public void Click()
     {
         Debug.Log("Chosen!");
+
     }
 
     // Efeito quando o mouse sai de cima da carta
