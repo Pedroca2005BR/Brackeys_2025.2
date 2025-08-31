@@ -526,6 +526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 61971581938587909}
+  - component: {fileID: 1385200938898907749}
   m_Layer: 0
   m_Name: Arma
   m_TagString: Untagged
@@ -550,3 +551,17 @@ Transform:
   - {fileID: 1982418711996434381}
   m_Father: {fileID: 6758804149597310304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385200938898907749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289666492765440903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b418df0cb8ea78347a8031a32cac563b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistola: {fileID: 1566285106065297518}
+  ak: {fileID: 1431502969404434161}

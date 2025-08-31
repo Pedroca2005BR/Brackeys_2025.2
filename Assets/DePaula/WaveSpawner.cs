@@ -71,6 +71,10 @@ public class WaveSpawner : MonoBehaviour
             return false;
         }
 
+        if (enemies[i].chanceToSpawn < UnityEngine.Random.value)
+        {
+            return false;
+        }
 
 
         //int rand = UnityEngine.Random.Range(0, positions.Length);
