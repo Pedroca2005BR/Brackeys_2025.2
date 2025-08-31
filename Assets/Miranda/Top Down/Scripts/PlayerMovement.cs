@@ -111,13 +111,13 @@ public class playerMovement : MonoBehaviour
 
     }
 
-    private void OnEnable()
-    {
-        GameStateManager.instance.OnGameStateChanged += OnGameStateChanged;
-    }
+    //private void OnEnable()
+    //{
+    //    GameStateManager.instance.OnGameStateChanged += OnGameStateChanged;
+    //}
 
-    private void OnDisable()
-    {
-        GameStateManager.instance.OnGameStateChanged -= OnGameStateChanged;
-    }
+    //private void OnDisable()
+    //{
+    //    GameStateManager.instance.OnGameStateChanged -= OnGameStateChanged;
+    //}
 }
