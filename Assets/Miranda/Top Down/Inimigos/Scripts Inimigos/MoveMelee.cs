@@ -52,27 +52,27 @@ public class MoveMelee : MonoBehaviour
     }
 
 
-    // Time shit
-    private void OnGameStateChanged(GameState state)
-    {
-        bool isEnabledVariable = state == GameState.Gameplay;
+    //// Time shit
+    //private void OnGameStateChanged(GameState state)
+    //{
+    //    bool isEnabledVariable = state == GameState.Gameplay;
 
-        if (!isEnabledVariable)
-        {
-            rb.Sleep();
-            //RigidbodySleepMode2D.
-        }
-        enabled = isEnabledVariable;
+    //    if (!isEnabledVariable)
+    //    {
+    //        rb.linearVelocity = Vector2.zero;
+    //        //RigidbodySleepMode2D.
+    //    }
+    //    enabled = isEnabledVariable;
 
-    }
+    //}
 
-    private void OnEnable()
-    {
-        GameStateManager.instance.OnGameStateChanged += OnGameStateChanged;
-    }
+    //private void OnEnable()
+    //{
+    //    GameStateManager.instance.OnGameStateChanged += OnGameStateChanged;
+    //}
 
-    private void OnDisable()
-    {
-        GameStateManager.instance.OnGameStateChanged -= OnGameStateChanged;
-    }
+    //private void OnDisable()
+    //{
+    //    GameStateManager.instance.OnGameStateChanged -= OnGameStateChanged;
+    //}
 }

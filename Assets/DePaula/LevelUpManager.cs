@@ -36,8 +36,8 @@ public class LevelUpManager : MonoBehaviour
 
     private void CallCardSystem()
     {
-        //Time.timeScale = 0f;
-        PauseController.instance.ToggleGameState();
+        Time.timeScale = 0f;
+        //PauseController.instance.ToggleGameState();
         cardDisplays.SetActive(true);
         cardGenerator.DisplayCards();
     }
@@ -45,8 +45,8 @@ public class LevelUpManager : MonoBehaviour
     public void InflictCardEffect(Card card)
     {
         // Restaurando ao normal
-        //Time.timeScale = 1f;
-        PauseController.instance.ToggleGameState();
+        Time.timeScale = 1f;
+        //PauseController.instance.ToggleGameState();
         cardDisplays.SetActive(false);
 
         // Fazendo a mudança

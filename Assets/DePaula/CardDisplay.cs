@@ -12,6 +12,7 @@ public class CardDisplay : MonoBehaviour
     Card storedCard;
 
     [SerializeField] private Animator animator;
+    [SerializeField] CardDisplay next;
 
     private void Start()
     {
@@ -87,12 +88,13 @@ public class CardDisplay : MonoBehaviour
     // Efeito quando a carta termina seu giro
     public void FlipEnded()
     {
-
+        
     }
 
     // Efeito quando a carta está no meio do giro e mostra sua frente
     public void ShowFront()
     {
         backgroundImage.sprite = backgroundSprite;
+        if (next != null) next.Flip();
     }
 }
